@@ -1,4 +1,3 @@
-import home_vd1 from './assets/videos/home_vd1.mp4';
 import home_vd from './assets/videos/home_vd.mp4';
 
 import teamImg from './assets/images/team-img.png';
@@ -15,7 +14,6 @@ export const IMAGE_SOURCES = {
 
 export const VIDEO_SOURCES = {
     home_vd,
-    home_vd1
 };
 
 export const teamData = {
