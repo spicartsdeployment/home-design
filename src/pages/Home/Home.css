@@ -1,0 +1,102 @@
+/* Home Page Styles */
+.home-section {
+    position: relative;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.home-bg-video {
+    position: absolute;
+    inset: 0;
+    width: 100vw;
+    height: 100vh;
+    object-fit: cover;
+    z-index: 0;
+}
+
+.home-bg-overlay {
+    position: absolute;
+    inset: 0;
+    background: hsl(var(--bg) / 0.85);
+    z-index: 1;
+}
+
+.home-hero-content {
+    position: relative;
+    z-index: 2;
+    text-align: center;
+    width: 100%;
+    /* max-width: 600px; */
+    margin: 0 auto;
+    padding: 2rem 1rem;
+    box-sizing: border-box;
+}
+
+.home-title {
+    font-size: 4rem;
+    /* font-family: 'Inter', 'Poppins', 'sans-serif'; */
+    margin-bottom: 1.5rem;
+    font-weight: 800;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    height: 80vh;
+    padding: 10em 2em 2em 2em;
+}
+
+.home-desc-con {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: baseline;
+}
+
+.home-subtitle {
+    font-size: 1.4rem;
+    margin-bottom: 2rem;
+}
+
+.get-quote-btn {
+    
+  /* background-color: #1a1a1a;
+  border: 1px solid transparent; */
+  background-color: transparent;
+  border: 1px solid #fff;
+}
+
+.get-quote-btn:hover {
+  background-color: hsl(258 90% 80%);
+  border: 1px solid hsl(258 90% 80%);
+  color: #000;
+}
+
+@media (max-width: 767px) {
+    .card {
+        justify-content: center;
+        padding: 2em 2rem 2em 1rem;
+    }
+
+    .home-title {
+        font-size: 2.5rem;
+    }
+
+    .home-desc-con {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+    }
+}
+
+@media (min-width: 768px) {
+    .home-title {
+        margin-bottom: 10rem;
+    }
+}

@@ -1,0 +1,136 @@
+/* Main App Layout */
+.app-main {
+  position: relative;
+  min-height: 100vh;
+  width: 100vw;
+  font-family: "Cormorant SC", 'Inter', 'Poppins', 'sans-serif';
+  overflow-x: hidden;
+}
+
+/* Navbar */
+.app-navbar {
+  position: fixed;
+  top: 2rem;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 95%;
+  z-index: 50;
+
+  background: rgba(255, 255, 255, 0.12);
+  backdrop-filter: blur(12px) saturate(180%);
+  -webkit-backdrop-filter: blur(12px) saturate(180%);
+
+  border: 1px solid rgba(255, 255, 255, 0.25);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+
+  border-radius: 1rem;
+  border: 1px solid hsl(var(--border));
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 1rem 2rem;
+  box-sizing: border-box;
+}
+
+/* Navbar list */
+.app-navbar-list {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+/* Buttons */
+.app-navbar-btn {
+  font-size: 1.2rem;
+  font-weight: 600;
+  padding: 0.2rem 0.8rem;
+  background: transparent;
+  cursor: pointer;
+
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+
+  outline: none !important;
+  border: none !important;
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s ease, transform 0.2s ease;
+}
+
+.app-navbar-btn:hover {
+  color: hsl(258 90% 80%);
+  transform: translateY(-2px);
+}
+
+.app-navbar-btn.active {
+  color: hsl(258 90% 80%);
+}
+
+/* Mobile version */
+@media (max-width: 700px) {
+  .app-navbar {
+    top: auto;
+    bottom: 2rem;
+    width: 90%;
+    border-radius: 2rem;
+    padding: 0.6rem 0.8rem;
+  }
+
+  .app-navbar-list {
+    justify-content: space-around;
+    width: 100%;
+    gap: 0;
+  }
+
+  .nav-label {
+    display: none;
+  }
+
+  .nav-icon {
+    font-size: 1.4rem;
+  }
+}
+
+/* Sections */
+.app-sections {
+  width: 100vw;
+}
+
+.app-section-card {
+  background-color: #121212;
+  min-height: 100vh;
+}
+
+/* Scroll to top button fix */
+.scroll-top-btn {
+  position: fixed;
+  right: 2rem;
+  bottom: 2rem;
+  z-index: 50;
+  background: #7c3aed;
+  color: #fff;
+  border: none;
+  border-radius: 50%;
+  width: 3rem;
+  height: 3rem;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: opacity 0.3s;
+  opacity: 0.7;
+}
+
+/* On mobile, push the button above the navbar */
+@media (max-width: 700px) {
+  .scroll-top-btn {
+    bottom: 6rem;
+    /* enough space above navbar */
+  }
+}
