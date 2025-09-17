@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import { FaInstagram, FaEnvelope, FaPhone } from "react-icons/fa";
+import { FaInstagram, FaEnvelope, FaPhone, FaFacebook } from "react-icons/fa";
 import "./Contact.css";
 
 const Contact = () => {
@@ -31,25 +31,32 @@ const Contact = () => {
 
   return (
     <section id="contact" className="contact-section">
+      <div>
+        <h2 className="contact-heading">Let's Talk</h2>
+      </div>
       <div
-        className="card contact-container">
+        className="contact-container">
         {/* Left */}
         <div className="contact-left">
-          <div>
-            <h2 className="contact-heading">Let's Talk</h2>
+          <div className="contact-info">
             <div className="contact-info-block">
               <div className="contact-value">info@home-design.com</div>
               <div className="contact-value">+91 8888 888 888</div>
             </div>
-            <div className="contact-label">Address:</div>
-            <address className="contact-address">
-              Home Design <br />
-              Plot No. 888, <br />
-              Rd. No. 88, Kukatpally, <br />
-              Hyderabad – 500085
-            </address>
+            <div className="contact-label">Address:
+              <address className="contact-address">
+                Home Design <br />
+                Plot No. 888, <br />
+                Rd. No. 88, Kukatpally, <br />
+                Hyderabad – 500085
+              </address>
+            </div>
           </div>
           <div className="contact-icons">
+
+            <a href="#" className="link" aria-label="Facebbol">
+              <FaFacebook size={28} />
+            </a>
             <a href="#" className="link" aria-label="Instagram">
               <FaInstagram size={28} />
             </a>
@@ -61,6 +68,7 @@ const Contact = () => {
             </a>
           </div>
         </div>
+
 
         {/* Right */}
         <div className="contact-right">
@@ -117,6 +125,8 @@ const Contact = () => {
             </button>
           </form>
         </div>
+
+
       </div>
     </section>
   );

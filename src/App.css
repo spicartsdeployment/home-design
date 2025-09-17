@@ -27,11 +27,19 @@
   border: 1px solid hsl(var(--border));
 
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
   align-items: center;
-  padding: 1rem 2rem;
+  padding: 0.4rem 2rem;
   box-sizing: border-box;
 }
+
+.app-navbar img {
+
+  max-width: 80px;
+  width: 100%;
+  height: auto;
+}
+
 
 /* Navbar list */
 .app-navbar-list {

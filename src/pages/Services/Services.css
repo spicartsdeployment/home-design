@@ -1,26 +1,190 @@
 /* Card container for Services page */
 .services-card {
   padding: 2rem;
-  max-width: 700px;
+  max-width: 900px;
   margin: 0 auto;
+  align-items: center;
+  justify-content: center;
 }
+
 /* Services Page Styles */
 .services-section {
-  min-height: 100vh;
+  /* min-height: 100vh; */
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
   background: none;
+  /* background: #696969; */
 }
+
 .services-title {
   font-size: 2.2rem;
   font-weight: 800;
+  margin-top: 1.5rem;
   margin-bottom: 2rem;
   text-align: center;
+  color: #fff;
 }
+
 .services-desc {
   font-size: 1.1rem;
   max-width: 600px;
   text-align: center;
+  color: #fff;
+}
+
+.services-box {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+
+}
+
+.services-box .img-box {
+  display: flex;
+  flex-direction: column;
+  max-width: 500px;
+}
+
+.services-box .img-box:hover {
+  transform: translateY(10px);
+  transition: transform 0.5s ease;
+}
+
+.services-box .img-box img {
+
+  display: block;
+  width: 450px;
+  border-radius: 10px;
+}
+
+.services-box .img-box p {
+  margin-top: 15px;
+  color: #fff;
+  text-align: center;
+}
+
+.apart-section {
+  color: #fff;
+  text-align: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px 20px;
+}
+
+.apart-section h1 {
+  margin-bottom: 40px;
+  font-size: 2.5rem;
+}
+
+.apart-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  margin-bottom: 40px;
+
+
+}
+
+.apart-item {
+  padding: 40px 20px;
+}
+
+.apart-item h2 {
+  font-size: 2rem;
+  margin-bottom: 16px;
+}
+
+.apart-item p {
+  font-size: 1rem;
+  line-height: 1.6;
+
+}
+
+.apart-footer {
+  margin-top: 20px;
+  font-size: 1.3rem;
+}
+
+.br-right {
+  border-right: 1px solid #444;
+}
+
+.br-buttom {
+  border-bottom: 1px solid #444;
+}
+
+.feedback-section {
+
+  text-align: center;
+  color: #fff;
+  align-items: center;
+  justify-content: center;
+  max-width: 1200px;
+  margin: auto;
+  margin-top: 40px;
+  margin-bottom: 20px;
+}
+
+.feedback-card {
+  margin-top: 20px;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 20px;
+  margin-top: 20px;
+  text-align: left;
+  justify-content: center;
+
+}
+
+.feedback {
+  border-radius: 10px;
+  background: #5e5d5d;
+  padding: 15px 10px;
+
+}
+
+.feedback p {
+  margin-bottom: 20px;
+  font-size: 1rem;
+}
+
+.feedback h3 {
+  font-size: 1.6rem;
+}
+
+@media (max-width: 767px) {
+
+  .services-card {
+    width: 100%;
+  }
+
+
+
+  .services-box {
+
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 100%;
+  }
+
+  .feedback-card {
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+  }
+
+  .apart-grid {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    width: 100%;
+
+  }
+
+  .apart-item {
+    border: none;
+  }
+
+
+
 }

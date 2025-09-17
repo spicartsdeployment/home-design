@@ -2,6 +2,7 @@ import React from 'react';
 // import Navbar from './Navbar';
 import './Home.css';
 import { VIDEO_SOURCES } from '../../constants';
+import { IMAGE_SOURCES } from '../../constants';
 
 const Home = () => (
     <section id="home" className="home-section">
@@ -22,7 +23,11 @@ const Home = () => (
 
         {/* Hero Content */}
         <div className="card home-hero-content">
-            <h1 className="home-title" >Tekuva designs</h1>
+
+            <div className='logo-tittle'>
+                <img src={IMAGE_SOURCES.agaraAssociatesLogo} alt="" />
+                {/* <h1 className="home-title" >Agara Associates</h1> */}
+            </div>
 
             <div className="home-desc-con">
                 <p className="home-subtitle">Crafting Timeless Spaces with a Modern Touch</p>

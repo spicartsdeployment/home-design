@@ -12,7 +12,7 @@ const About = () => {
       <div className="about-container">
         {/* Team main image */}
         <div className="div1 team-hero">
-          <img src={teamData.teamImage} alt="Team" className="team-photo" />
+          {/* <img src={teamData.teamImage} alt="Team" className="team-photo" /> */}
           <div className="overlay">
             <p>{teamData.description.text}</p>
           </div>
