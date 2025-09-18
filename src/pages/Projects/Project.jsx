@@ -1,5 +1,5 @@
 import React from 'react';
-import './project.css';
+import './Project.css';
 import Navbar from '../../common-components/Navbar';
 import { IMAGE_SOURCES } from '../../constants';
 import { useState, useEffect } from 'react';
