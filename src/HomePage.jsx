@@ -13,11 +13,11 @@ import Navbar from "./common-components/Navbar";
 
 
 const sections = [
-    { id: "home", label: "Home", icon: <FaHome />, type: "scroll" },
-    { id: "about", label: "About", icon: <FaInfoCircle />, type: "scroll" },
-    { id: "services", label: "Services", icon: <FaBuilding />, type: "scroll" },
-    { id: "projects", label: "Projects", icon: <FaCouch />, type: "page" },
-    { id: "contact", label: "Contact", icon: <FaEnvelope />, type: "scroll" },
+    { id: "home", label: "HOME", icon: <FaHome />, type: "scroll" },
+    { id: "about", label: "ABOUT", icon: <FaInfoCircle />, type: "scroll" },
+    { id: "services", label: "SERVICES", icon: <FaBuilding />, type: "scroll" },
+    { id: "projects", label: "PROJECTS", icon: <FaCouch />, type: "page" },
+    { id: "contact", label: "CONTACT", icon: <FaEnvelope />, type: "scroll" },
 ];
 
 function HomePage() {
