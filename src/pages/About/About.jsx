@@ -19,7 +19,24 @@ const About = () => {
         </div>
 
         {/* Members */}
-        {teamData.members.map((member, index) => (
+
+
+        {teamData?.members?.length > 0 ? (
+          teamData.members.map((member, index) => (
+            <div key={member.id} className={`div${index + 2} member-card`}>
+              <img src={member.img} alt={member.name} />
+              <div className="overlay">
+                <h3>{member.name}</h3>
+                <p>{member.role}</p>
+              </div>
+            </div>
+          ))
+        ) : (
+          <p>No members found</p>
+        )}
+
+
+        {/* {teamData.members.map((member, index) => (
           <div key={member.id} className={`div${index + 2} member-card`}>
             <img src={member.img} alt={member.name} />
             <div className="overlay">
@@ -27,7 +44,30 @@ const About = () => {
               <p>{member.role}</p>
             </div>
           </div>
-        ))}
+        ))} */}
+
+
+        {/* <div className="team-container">
+          <div className="image-box">
+            <img src="" alt="" />
+            <h3 className="member-name"></h3>
+            <p className="designation"></p>
+          </div>
+
+          <div className="image-box">
+            <img src="" alt="" />
+            <h3 className="member-name"></h3>
+            <p className="designation"></p>
+          </div>
+
+          <div className="image-box">
+            <img src="" alt="" />
+            <h3 className="member-name"></h3>
+            <p className="designation"></p>
+          </div>
+        </div> */}
+
+
       </div>
     </section>
   );
