@@ -12,6 +12,8 @@ import './App.css';
 import Navbar from "./common-components/Navbar";
 
 
+
+
 const sections = [
     { id: "home", label: "Home", icon: <FaHome />, type: "scroll" },
     { id: "about", label: "About", icon: <FaInfoCircle />, type: "scroll" },
@@ -133,14 +135,15 @@ function HomePage() {
                 <div ref={sectionRefs.home} id="home" className="app-section-card">
                     <Home />
                 </div>
-                <div ref={sectionRefs.about} id="about" className="app-section-card">
-                    <LazyLoadSection>
-                        <About />
-                    </LazyLoadSection>
-                </div>
+
                 <div ref={sectionRefs.services} id="services" className="app-section-card">
                     <LazyLoadSection>
                         <Services />
+                    </LazyLoadSection>
+                </div>
+                <div ref={sectionRefs.about} id="about" className="app-section-card">
+                    <LazyLoadSection>
+                        <About />
                     </LazyLoadSection>
                 </div>
                 <div ref={sectionRefs.contact} id="contact" className="app-section-card">

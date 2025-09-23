@@ -54,16 +54,16 @@ const Contact = () => {
           </div>
           <div className="contact-icons">
 
-            <a href="#" className="link" aria-label="Facebbol">
+            <a href="#" className="link" aria-label="Facebbol" target="_blank">
               <FaFacebook size={28} />
             </a>
-            <a href="#" className="link" aria-label="Instagram">
+            <a href="https://www.instagram.com/agaraassociates/" className="link" aria-label="Instagram" target="_blank">
               <FaInstagram size={28} />
             </a>
-            <a href="mailto:info@23dds.com" className="link" aria-label="Email">
+            <a href="mailto:agaraassociates@gmail.com" className="link" aria-label="Email" target="_blank">
               <FaEnvelope size={28} />
             </a>
-            <a href="tel:+919000229023" className="link" aria-label="Phone">
+            <a href="tel:+919000229023" className="link" aria-label="Phone" target="_blank">
               <FaPhone size={28} />
             </a>
           </div>

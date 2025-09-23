@@ -4,7 +4,7 @@ import { Services_Images } from '../../constants'
 
 const Services = () => (
   <section id="services" className="services-section">
-    <h1 className="services-title">Our Services</h1>
+    <h1 className="services-title">Services</h1>
     <p className="services-desc">Transforming Spaces with Purpose & Precision.</p>
 
 

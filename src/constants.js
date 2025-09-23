@@ -10,7 +10,54 @@ import servimg4 from './assets/images/servimg4.jpg';
 import servimg2 from './assets/images/servimg2.jpg';
 import servimg3 from './assets/images/servimg3.jpg';
 import servimg1 from './assets/images/servimg1.jpg';
-import agaraAssociatesLogo from './assets/images/Aagara Associates logo.png'
+import agaraAssociatesLogo from './assets/images/Aagara Associates logo.png';
+import project1Img from './assets/images/project_images/FLAT_NO_102_NARSINGI_01/hero.jpg';
+import project2Img from './assets/images/project_images/PENTHOUSE_HI_TECH_CITY/hero.jpg';
+import project3Img from './assets/images/project_images/FARM_HOUSE_MAHESHWARAM/hero.jpg';
+import project4Img from './assets/images/project_images/VILLA_BOWENPALLY/hero.jpg'
+// import project5Img from './assets/images/project_images/WHITE_RIDGE_HOTEL_HI_TECH_CITY';
+import project6Img from './assets/images/project_images/APARTMENT_MACHILIPATNAM/hero.jpg'
+//import project7Img from './assets/images/project_images/APARTMENT_KONDAPUR/';
+import project8Img from './assets/images/project_images/VASAVIKA_BRINDAVANAM_LAYOUT_BENGALURU/hero.jpg'
+import project9Img from './assets/images/project_images/VILLA_LAYOUT_KADTHAL/hero.jpg';
+import project10Img from './assets/images/project_images/CHINTHALA RESIDENCE_BOLLARAM/hero.jpg';
+import project11Img from './assets/images/project_images/CLUB_TABERNA_JUBLIEE HILLS/hero.jpg';
+import project12Img from './assets/images/project_images/FARMLAND_LAYOUT_KOTRA/floorplan.jpg';
+
+
+const project1_Images = Object.values(
+  import.meta.glob('./assets/images/project_images/FLAT_NO_102_NARSINGI_01/*.{png,jpg,jpeg,svg}', { eager: true })
+).map((module) => module?.default || module);
+
+const project2_Images = Object.values(
+  import.meta.glob('./assets/images/project_images/PENTHOUSE_HI_TECH_CITY/*.{png,jpg,jpeg,svg}', { eager: true })
+).map((module) => module?.default || module);
+
+const project3_Images = Object.values(
+  import.meta.glob('./assets/images/project_images/FARM_HOUSE_MAHESHWARAM/*.{png,jpg,jpeg,svg}', { eager: true })
+).map((module) => module?.default || module);
+
+const project4_Images = Object.values(
+  import.meta.glob('./assets/images/project_images/VILLA_BOWENPALLY/*.{png,jpg,jpeg,svg}', { eager: true })
+).map((module) => module?.default || module);
+
+const project6_Images = Object.values(
+  import.meta.glob('./assets/images/project_images/APARTMENT_MACHILIPATNAM/*.{png,jpg,jpeg,svg}', { eager: true })
+).map((module) => module?.default || module);
+
+const project8_Images = Object.values(
+  import.meta.glob('./assets/images/project_images/VASAVIKA_BRINDAVANAM_LAYOUT_BENGALURU/*.{png,jpg,jpeg,svg}', { eager: true })
+).map((module) => module?.default || module);
+
+const project10_Images = Object.values(
+  import.meta.glob('./assets/images/project_images/CHINTHALA RESIDENCE_BOLLARAM/*.{png,jpg,jpeg,svg}', { eager: true })
+).map((module) => module?.default || module);
+
+const project11_Images = Object.values(
+  import.meta.glob('./assets/images/project_images/CLUB_TABERNA_JUBLIEE HILLS/*.{png,jpg,jpeg,svg}', { eager: true })
+).map((module) => module?.default || module);
+
+
 
 
 
@@ -36,9 +83,27 @@ export const VIDEO_SOURCES = {
   home_vd,
 };
 
+
+export const project_info = [
+  { id: 1, title: "Flat No 102, Narsingi", subTittle: "Resedential", img: project1Img, images: project1_Images, description: "This project focuses on creating a contemporary villa that balances aesthetics, functionality, and sustainability. The design integrates open-plan living spaces with natural light and ventilation, incorporating large glass panels and green terraces. The villa’s layout emphasizes connectivity between indoor and outdoor areas while maintaining privacy for the residents. Materials were chosen to complement the natural surroundings, and energy-efficient systems were integrated to minimize environmental impact." },
+  { id: 2, title: "Penthouse, Hi-tech city", subTittle: "Mixed Use", img: project2Img, images: project2_Images, description: "This project focuses on creating a contemporary villa that balances aesthetics, functionality, and sustainability. The design integrates open-plan living spaces with natural light and ventilation, incorporating large glass panels and green terraces. The villa’s layout emphasizes connectivity between indoor and outdoor areas while maintaining privacy for the residents. Materials were chosen to complement the natural surroundings, and energy-efficient systems were integrated to minimize environmental impact." },
+  { id: 3, title: "Farm House, Maheswaram", subTittle: "Resedential", img: project3Img, images: project3_Images, description: "This project focuses on creating a contemporary villa that balances aesthetics, functionality, and sustainability. The design integrates open-plan living spaces with natural light and ventilation, incorporating large glass panels and green terraces. The villa’s layout emphasizes connectivity between indoor and outdoor areas while maintaining privacy for the residents. Materials were chosen to complement the natural surroundings, and energy-efficient systems were integrated to minimize environmental impact." },
+  { id: 4, title: "Villa, Bowenapally", subTittle: "Resedential", img: project4Img, images: project4_Images, description: "This project focuses on creating a contemporary villa that balances aesthetics, functionality, and sustainability. The design integrates open-plan living spaces with natural light and ventilation, incorporating large glass panels and green terraces. The villa’s layout emphasizes connectivity between indoor and outdoor areas while maintaining privacy for the residents. Materials were chosen to complement the natural surroundings, and energy-efficient systems were integrated to minimize environmental impact." },
+  { id: 5, title: "White Ridge Hotel, Hi-tech City", subTittle: "Hospitality", img: project1Img, images: project2_Images, description: "This project focuses on creating a contemporary villa that balances aesthetics, functionality, and sustainability. The design integrates open-plan living spaces with natural light and ventilation, incorporating large glass panels and green terraces. The villa’s layout emphasizes connectivity between indoor and outdoor areas while maintaining privacy for the residents. Materials were chosen to complement the natural surroundings, and energy-efficient systems were integrated to minimize environmental impact." },
+  { id: 6, title: "Aparatment, Machilipatnam", subTittle: "Resedential", img: project6Img, images: project6_Images, description: "This project focuses on creating a contemporary villa that balances aesthetics, functionality, and sustainability. The design integrates open-plan living spaces with natural light and ventilation, incorporating large glass panels and green terraces. The villa’s layout emphasizes connectivity between indoor and outdoor areas while maintaining privacy for the residents. Materials were chosen to complement the natural surroundings, and energy-efficient systems were integrated to minimize environmental impact." },
+  { id: 7, title: "Apartment, Kondapur", subTittle: "Resedential", img: project1Img, images: project2_Images, description: "This project focuses on creating a contemporary villa that balances aesthetics, functionality, and sustainability. The design integrates open-plan living spaces with natural light and ventilation, incorporating large glass panels and green terraces. The villa’s layout emphasizes connectivity between indoor and outdoor areas while maintaining privacy for the residents. Materials were chosen to complement the natural surroundings, and energy-efficient systems were integrated to minimize environmental impact." },
+  { id: 8, title: "Vasavika Brindavanam Layout, Bengaluru", subTittle: "Hospitality", img: project8Img, images: project8_Images, description: "This project focuses on creating a contemporary villa that balances aesthetics, functionality, and sustainability. The design integrates open-plan living spaces with natural light and ventilation, incorporating large glass panels and green terraces. The villa’s layout emphasizes connectivity between indoor and outdoor areas while maintaining privacy for the residents. Materials were chosen to complement the natural surroundings, and energy-efficient systems were integrated to minimize environmental impact." },
+  { id: 9, title: "Villa Layout, Kadthal", subTittle: "Resedential", img: project9Img, images: project2_Images, description: "This project focuses on creating a contemporary villa that balances aesthetics, functionality, and sustainability. The design integrates open-plan living spaces with natural light and ventilation, incorporating large glass panels and green terraces. The villa’s layout emphasizes connectivity between indoor and outdoor areas while maintaining privacy for the residents. Materials were chosen to complement the natural surroundings, and energy-efficient systems were integrated to minimize environmental impact." },
+  { id: 10, title: "Chinthala Residence, Bollaram", subTittle: "Resedential", img: project10Img, images: project10_Images, description: "This project focuses on creating a contemporary villa that balances aesthetics, functionality, and sustainability. The design integrates open-plan living spaces with natural light and ventilation, incorporating large glass panels and green terraces. The villa’s layout emphasizes connectivity between indoor and outdoor areas while maintaining privacy for the residents. Materials were chosen to complement the natural surroundings, and energy-efficient systems were integrated to minimize environmental impact." },
+  { id: 11, title: "Club Taberna, Jublee Hills", subTittle: "F&B Interior", img: project11Img, images: project11_Images, description: "This project focuses on creating a contemporary villa that balances aesthetics, functionality, and sustainability. The design integrates open-plan living spaces with natural light and ventilation, incorporating large glass panels and green terraces. The villa’s layout emphasizes connectivity between indoor and outdoor areas while maintaining privacy for the residents. Materials were chosen to complement the natural surroundings, and energy-efficient systems were integrated to minimize environmental impact." },
+  { id: 12, title: "Farmland Layout, Kotra", subTittle: "Resedential", img: project12Img, images: project2_Images, description: "This project focuses on creating a contemporary villa that balances aesthetics, functionality, and sustainability. The design integrates open-plan living spaces with natural light and ventilation, incorporating large glass panels and green terraces. The villa’s layout emphasizes connectivity between indoor and outdoor areas while maintaining privacy for the residents. Materials were chosen to complement the natural surroundings, and energy-efficient systems were integrated to minimize environmental impact." },
+
+]
+
+
 export const teamData = {
   description: {
-    title: "About Us",
+    title: "About us",
     text: `
       A slight tilt of the Earth’s axis brings about the change of seasons, patterns of light and darkness and the 
       flow of life on our planet. This 25 degrees shift, with a tolerance of half a degree is an unmissable, 

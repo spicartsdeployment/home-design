@@ -166,6 +166,7 @@
 import { Routes, Route } from "react-router-dom";
 import Homepage from "./HomePage";
 import Project from "./pages/Projects/Project";
+import ProjectDetails from "./pages/ProjectsDetails/ProjectDetails";
 
 function App() {
   return (
@@ -173,6 +174,7 @@ function App() {
     <Routes>
       <Route path="/" element={<Homepage />} />
       <Route path="/projects" element={<Project />} />
+      <Route path="/project/:id" element={<ProjectDetails />} />
     </Routes>
 
   );

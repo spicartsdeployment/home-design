@@ -29,11 +29,16 @@ const Home = () => (
                 {/* <h1 className="home-title" >Agara Associates</h1> */}
             </div>
 
-            <div className="home-desc-con">
-                <p className="home-subtitle">Crafting Timeless Spaces with a Modern Touch</p>
-                <button className="get-quote-btn">Get Quote</button>
-            </div>
+
+
         </div>
+
+        <div className="home-desc-con">
+            <p className="home-subtitle">crafting timeless spaces with a modern touch</p>
+            <button className="get-quote-btn">Get Quote</button>
+        </div>
+
+
     </section>
 );
 

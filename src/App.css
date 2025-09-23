@@ -10,7 +10,7 @@
 /* Navbar */
 .app-navbar {
   position: fixed;
-  top: 2rem;
+  top: 1rem;
   left: 50%;
   transform: translateX(-50%);
   width: 95%;
@@ -29,13 +29,13 @@
   display: flex;
   justify-content: space-between;
   align-items: center;
-  padding: 0.4rem 2rem;
+  padding: 0.2rem 2rem;
   box-sizing: border-box;
 }
 
 .app-navbar img {
 
-  max-width: 80px;
+  max-width: 60px;
   width: 100%;
   height: auto;
 }
@@ -71,12 +71,12 @@
 }
 
 .app-navbar-btn:hover {
-  color: hsl(258 90% 80%);
+  color: hsl(260, 2%, 72%);
   transform: translateY(-2px);
 }
 
 .app-navbar-btn.active {
-  color: hsl(258 90% 80%);
+  color: hsl(260, 2%, 72%);
 }
 
 /* Mobile version */

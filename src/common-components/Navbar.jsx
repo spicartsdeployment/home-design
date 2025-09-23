@@ -1,4 +1,4 @@
-import { useLocation, useNavigate } from "react-router-dom";
+import { Link, useLocation, useNavigate } from "react-router-dom";
 import React from "react";
 
 import { IMAGE_SOURCES } from "../constants";
@@ -17,10 +17,10 @@ function Navbar({ active, isMobile, scrollToSection }) {
     const navigate = useNavigate();
 
     const sections = [
-        { id: "home", label: "Home", icon: <FaHome />, type: "scroll" },
-        { id: "about", label: "About", icon: <FaInfoCircle />, type: "scroll" },
+        // { id: "home", label: "HOME", icon: <FaHome />, type: "scroll" },
         { id: "services", label: "Services", icon: <FaBuilding />, type: "scroll" },
         { id: "projects", label: "Projects", icon: <FaCouch />, type: "page" },
+        { id: "about", label: "About us", icon: <FaInfoCircle />, type: "scroll" },
         { id: "contact", label: "Contact", icon: <FaEnvelope />, type: "scroll" },];
 
     const handleScrollNav = (sectionId) => {
@@ -40,8 +40,8 @@ function Navbar({ active, isMobile, scrollToSection }) {
 
     return (
         <nav className="app-navbar">
-            <a href="#home">
-                <img className="main-logo" src={IMAGE_SOURCES.logo} alt="Logo" /></a>
+            <Link to={'/'}>
+                <img className="main-logo" src={IMAGE_SOURCES.logo} alt="Logo" /></Link>
             <ul className="app-navbar-list">
                 {sections.map((sec) => (
                     <li key={sec.id}>
