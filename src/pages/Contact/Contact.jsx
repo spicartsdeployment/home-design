@@ -24,17 +24,17 @@ const Contact = () => {
       console.log("Form Submitted:", formData);
       emailjs.
       send(
-        "service_uvhfb8j",
-        "template_bqc0eb2",
+        "service_qsm8f4n",
+        "template_w7upb1a",
         formData,
-        "oWVnzyewU1Z86cEuJ"
+        "1AZTh6dOkB_Uzld2d"
 
 
       )
       .then(
         (result)=>{
           setStatus("messege sen succes fully");
-          const phone= '9390398006';
+          const phone= '9515101986';
           const whatsappURL=` https://wa.me/${phone}?text=Hi, I am ${formData.name}. My email is ${formData.email}. Message: ${formData.contact}`;
           window.open(whatsappURL, "_blank");
         },
