@@ -62,3 +62,32 @@
     width: 100%;
     border-radius: 10px;
 }
+
+
+@media (max-width: 767px) {
+
+
+
+
+    .project-info-container img {
+        height: 230px;
+        width: 95%;
+        padding: 8px;
+        border-radius: 10px;
+    }
+
+    .project-img-container {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 10px;
+        margin: 0 5px;
+        margin-bottom: 70px;
+
+    }
+
+    .project-info-container p {
+        padding: 8px;
+    }
+
+
+}

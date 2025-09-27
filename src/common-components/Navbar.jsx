@@ -38,6 +38,12 @@ function Navbar({ active, isMobile, scrollToSection }) {
 
     }
 
+    const handleNavigate = (path) => {
+        navigate(path);
+        window.scrollTo({ top: 0, behavior: 'smooth' })
+
+    }
+
     return (
         <nav className="app-navbar">
             <Link to={'/'}>
@@ -51,7 +57,7 @@ function Navbar({ active, isMobile, scrollToSection }) {
                             </button>) :
                             (
                                 <button className={`app-navbar-btn ${location.pathname === "/projects" ? "active" : ""}`}
-                                    onClick={() => navigate('/projects')}>
+                                    onClick={() => handleNavigate('/projects')}>
                                     {isMobile ? sec.icon : <span className="nav-label">{sec.label}</span>}
                                 </button>
                             )}

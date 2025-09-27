@@ -1,0 +1,56 @@
+.project-gallery-container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: hsl(0, 0%, 7%);
+    min-width: 100vw;
+    min-height: 100vh;
+}
+
+.swiper-container {
+
+    margin-top: 80px;
+    width: 800px;
+    height: 500px;
+    /* fixed consistent height */
+    display: flex;
+    justify-content: center;
+    /* align-items: center;
+    position: relative; */
+}
+
+.swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.slider-image {
+    width: 100%;
+    height: 100%;
+}
+
+.slider-image img {
+    width: 100%;
+    height: 500px;
+    object-fit: cover;
+    /* or 'cover' if you want it cropped */
+    border-radius: 12px;
+}
+
+@media (max-width: 767px) {
+    .swiper-container {
+        margin-bottom: 100px;
+        width: 330px;
+        height: 250px;
+        /* smaller for mobile */
+    }
+
+    .slider-image img {
+        width: 100%;
+        height: 270px;
+        border-radius: 7px;
+        overflow: hidden;
+    }
+}

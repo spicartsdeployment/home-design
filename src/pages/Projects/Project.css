@@ -129,7 +129,7 @@
     }
 
 
-    .projects-container {
+    /* .projects-container {
         display: flex;
         flex-direction: column;
         max-width: 700px;
@@ -145,6 +145,16 @@
     .right-container .project-box img {
         max-width: 600px;
         width: 100%;
+    } */
+
+    .project-info-conatainer {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        gap: 15px;
+        margin-left: 10px;
+        margin-right: 10px;
+        width: 320px;
+        margin-bottom: 100px;
     }
 
 

@@ -163,19 +163,28 @@
 
 // export default App;
 
-import { Routes, Route } from "react-router-dom";
+import { Routes, Route, useLocation } from "react-router-dom";
 import Homepage from "./HomePage";
 import Project from "./pages/Projects/Project";
 import ProjectDetails from "./pages/ProjectsDetails/ProjectDetails";
+import ProjectGallery from "./pages/ProjectGallery/ProjectGallery";
+import ScrollToTop from "./common-components/ScrollToTop";
 
 function App() {
-  return (
+  const loaction = useLocation();
+  console.log("current path" + location.pathname)
 
-    <Routes>
-      <Route path="/" element={<Homepage />} />
-      <Route path="/projects" element={<Project />} />
-      <Route path="/project/:id" element={<ProjectDetails />} />
-    </Routes>
+  return (
+    <>
+      <ScrollToTop />
+      <Routes>
+        <Route path="/" element={<Homepage />} />
+        <Route path="/projects" element={<Project />} />
+        <Route path="/project/:id" element={<ProjectDetails />} />
+        <Route path="/project/:id/gallery" element={<ProjectGallery />} />
+      </Routes>
+
+    </>
 
   );
 }

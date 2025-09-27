@@ -28,6 +28,8 @@ import project12Img from './assets/images/project_images/FARMLAND_LAYOUT_KOTRA/f
 const project1_Images = Object.values(
   import.meta.glob('./assets/images/project_images/FLAT_NO_102_NARSINGI_01/*.{png,jpg,jpeg,svg}', { eager: true })
 ).map((module) => module?.default || module);
+console.log('project1_Images: ,......................,khjgfh', project1_Images);
+
 
 const project2_Images = Object.values(
   import.meta.glob('./assets/images/project_images/PENTHOUSE_HI_TECH_CITY/*.{png,jpg,jpeg,svg}', { eager: true })
@@ -72,12 +74,13 @@ export const IMAGE_SOURCES = {
 
 };
 
-export const Services_Images = {
-  servimg1,
-  servimg2,
-  servimg3,
-  servimg4,
-}
+export const Services_Images = [
+  { img: servimg1, tittle: "Architecture" },
+  { img: servimg2, tittle: "Interior Design" },
+  { img: servimg3, tittle: "Landscape Design" },
+  { img: servimg4, tittle: "Construction" },
+
+]
 
 export const VIDEO_SOURCES = {
   home_vd,

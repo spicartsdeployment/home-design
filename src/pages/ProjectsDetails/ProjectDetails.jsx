@@ -1,4 +1,4 @@
-import { useParams, Link } from "react-router-dom";
+import { useParams, Link, useNavigate } from "react-router-dom";
 import { project_info } from "../../constants";
 import { useEffect, useState } from "react";
 import './ProjectDetails.css';
@@ -8,6 +8,7 @@ import Navbar from "../../common-components/Navbar";
 export default function ProjectDetails() {
     const { id } = useParams();
     const [project, setProject] = useState(null);
+    const navigate = useNavigate();
 
     useEffect(() => {
         const projectId = parseInt(id);
@@ -39,18 +40,24 @@ export default function ProjectDetails() {
             />
             <div className="project-info-container">
                 <h1>{project.title}</h1>
-                <div className="project-hero-img">
+                {/* <div className="project-hero-img">
                     <img src={project.img} alt="" />
 
-                </div>
+                </div> */}
 
                 <p>{project.description}</p>
                 <div className="project-img-container">
-                    {project.images.map((image, id) => (
-                        <div key={id}>
+                    {project.images.map((image, idx) => (
 
-                            <img src={image} alt="img" />
-                        </div>
+
+                        <img
+                            key={idx}
+                            src={image}
+                            onClick={() => navigate(`/project/${id}/gallery?index=${idx}`)}
+
+                            alt="img"
+                        />
+
                     ))}
                 </div>
             </div>

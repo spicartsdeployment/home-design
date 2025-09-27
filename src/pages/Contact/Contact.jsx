@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { FaInstagram, FaEnvelope, FaPhone, FaFacebook } from "react-icons/fa";
 import "./Contact.css";
+import emailjs from 'emailjs-com';
 
 const Contact = () => {
   const [formData, setFormData] = useState({
@@ -8,6 +9,8 @@ const Contact = () => {
     email: "",
     contact: "",
   });
+
+  const [status,setStatus]=useState("");
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -19,7 +22,27 @@ const Contact = () => {
 
     if (e.target.checkValidity()) {
       console.log("Form Submitted:", formData);
+      emailjs.
+      send(
+        "service_uvhfb8j",
+        "template_bqc0eb2",
+        formData,
+        "oWVnzyewU1Z86cEuJ"
 
+
+      )
+      .then(
+        (result)=>{
+          setStatus("messege sen succes fully");
+          const phone= '9390398006';
+          const whatsappURL=` https://wa.me/${phone}?text=Hi, I am ${formData.name}. My email is ${formData.email}. Message: ${formData.contact}`;
+          window.open(whatsappURL, "_blank");
+        },
+        (error)=>{
+          setStatus("error");
+        }
+      )
+ 
       // Reset form
       setFormData({ name: "", email: "", contact: "" });
       e.target.reset();

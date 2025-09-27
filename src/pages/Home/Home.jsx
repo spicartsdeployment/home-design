@@ -35,7 +35,7 @@ const Home = () => (
 
         <div className="home-desc-con">
             <p className="home-subtitle">crafting timeless spaces with a modern touch</p>
-            <button className="get-quote-btn">Get Quote</button>
+            <a href="#contact">  <button className="get-quote-btn">Get Quote</button></a>
         </div>
 
 
