@@ -10,7 +10,7 @@ const Contact = () => {
     contact: "",
   });
 
-  const [status,setStatus]=useState("");
+  const [status, setStatus] = useState("");
 
   const handleChange = (e) => {
     const { name, value } = e.target;
@@ -23,26 +23,26 @@ const Contact = () => {
     if (e.target.checkValidity()) {
       console.log("Form Submitted:", formData);
       emailjs.
-      send(
-        "service_qsm8f4n",
-        "template_w7upb1a",
-        formData,
-        "1AZTh6dOkB_Uzld2d"
+        send(
+          "service_qsm8f4n",
+          "template_w7upb1a",
+          formData,
+          "1AZTh6dOkB_Uzld2d"
 
 
-      )
-      .then(
-        (result)=>{
-          setStatus("messege sen succes fully");
-          const phone= '9515101986';
-          const whatsappURL=` https://wa.me/${phone}?text=Hi, I am ${formData.name}. My email is ${formData.email}. Message: ${formData.contact}`;
-          window.open(whatsappURL, "_blank");
-        },
-        (error)=>{
-          setStatus("error");
-        }
-      )
- 
+        )
+        .then(
+          (result) => {
+            setStatus("messege sent succes fully");
+            const phone = '9515101986';
+            const whatsappURL = ` https://wa.me/${phone}?text=Hi, I am ${formData.name}. My email is ${formData.email}. Message: ${formData.contact}`;
+            window.open(whatsappURL, "_blank");
+          },
+          (error) => {
+            setStatus("error");
+          }
+        )
+
       // Reset form
       setFormData({ name: "", email: "", contact: "" });
       e.target.reset();
@@ -147,6 +147,8 @@ const Contact = () => {
               SEND
             </button>
           </form>
+
+          <p style={{ color: "white" }}>{status}</p>
         </div>
 
 
