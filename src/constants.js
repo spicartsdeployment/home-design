@@ -75,10 +75,10 @@ export const IMAGE_SOURCES = {
 };
 
 export const Services_Images = [
-  { img: servimg1, tittle: "Architecture" },
-  { img: servimg2, tittle: "Interior Design" },
-  { img: servimg3, tittle: "Landscape Design" },
-  { img: servimg4, tittle: "Construction" },
+  { img: servimg1, tittle: "Architecture", desc: "The art and science of designing buildings and spaces, balancing creativity, functionality, and structural integrity to shape the built environment." },
+  { img: servimg2, tittle: "Interior Design", desc: "Enhancing indoor spaces through creative layouts, colors, lighting, and materials to make environments both functional and aesthetically pleasing." },
+  { img: servimg3, tittle: "Landscape Design", desc: "Designing outdoor spaces by blending natural elements like plants, water, and terrain with built structures to create harmonious, functional, and beautiful environments." },
+  { img: servimg4, tittle: "Construction", desc: "The process of planning, designing, and building structures with durability, safety, and efficiency as the foundation." },
 
 ]
 

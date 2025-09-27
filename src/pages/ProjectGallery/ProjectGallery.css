@@ -39,6 +39,21 @@
     border-radius: 12px;
 }
 
+.project-gallery-container .swiper-button-next {
+    color: #fff;
+    height: 30px;
+    width: 30px;
+}
+
+.project-gallery-container .swiper-button-prev {
+    color: #fff;
+    height: 30px;
+}
+
+.swiper-pagination-bullet-active {
+    background: #fff;
+}
+
 @media (max-width: 767px) {
     .swiper-container {
         margin-bottom: 100px;

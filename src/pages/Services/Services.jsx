@@ -38,7 +38,7 @@ const Services = () => {
                 </div>
 
                 <div className='flip-card-back'>
-                  <p className='img-desc'>This is the description of the image. Click to go back.</p>
+                  <p className='img-desc'>{obj.desc}</p>
                 </div>
 
               </div>

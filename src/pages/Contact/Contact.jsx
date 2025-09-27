@@ -37,8 +37,10 @@ const Contact = () => {
             const phone = '9515101986';
             const whatsappURL = ` https://wa.me/${phone}?text=Hi, I am ${formData.name}. My email is ${formData.email}. Message: ${formData.contact}`;
             window.open(whatsappURL, "_blank");
+            setTimeout(() => setStatus(""), 3000);
           },
           (error) => {
+            setTimeout(() => setStatus(""), 3000);
             setStatus("error");
           }
         )
@@ -148,7 +150,7 @@ const Contact = () => {
             </button>
           </form>
 
-          <p style={{ color: "white" }}>{status}</p>
+          <p style={{ color: "white", marginTop: "15px", textAlign: "center" }}>{status}</p>
         </div>
 
 
