@@ -104,18 +104,26 @@ const Services = () => {
         <div className='feedback-card'>
 
           <div className='feedback'>
-            <p>Boost your product and services's creditibility by adding testimonials from your clients. People love recommandations so feedback from others who've tried it is invaluable. Boost your product and services's creditibility by adding testimonials from your clients. People love recommandations so feedback from others who've tried it is invaluable </p>
-            <h3>-Damodar</h3>
+            <p>"Working with Agara Associates on our farmhouse in Maheshwaram was an absolute pleasure.
+              Their team perfectly balanced modern design with the natural landscape, creating a serene and luxurious retreat.
+              Every detail was thoughtfully executed, and the final result exceeded our expectations."
+            </p>
+            <h3>– Mr. Naresh Garu</h3>
           </div>
 
           <div className='feedback'>
-            <p>Boost your product and services's creditibility by adding testimonials from your clients. People love recommandations so feedback from others who've tried it is invaluable </p>
-            <h3>-Damodar</h3>
+            <p>"Agara Associates transformed our Flat No. 102 in Narsingi into a home that perfectly blends classic elegance with modern comfort.
+              Their attention to detail and commitment to quality made the entire process seamless.
+              The result is a space that truly feels both sophisticated and welcoming."
+            </p>
+            <h3>– Mr. Sudharshan Garu</h3>
           </div>
 
           <div className='feedback'>
-            <p>Boost your product and services's creditibility by adding testimonials from your clients. People love recommandations so feedback from others who've tried it is invaluable </p>
-            <h3>-Damodar</h3>
+            <p>"Agara Associates delivered an exceptional landscape design for our government park in Nagarkurnool.
+              Their team combined modern aesthetics with functional planning, creating a space that is both visually appealing and highly usable for the community.
+              The professionalism and attention to detail throughout the project were truly commendable." </p>
+            <h3>– Telangana Irrigation Department</h3>
           </div>
 
         </div>

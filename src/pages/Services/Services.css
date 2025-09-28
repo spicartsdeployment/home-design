@@ -68,6 +68,10 @@
   margin-top: 15px;
   color: #fff;
   text-align: center;
+  font-size: 0.9rem;
+  font-family: 'Inter', sans-serif;
+  font-style: italic;
+  padding: 5px;
 }
 
 .apart-section {

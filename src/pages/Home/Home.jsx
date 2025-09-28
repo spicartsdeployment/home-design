@@ -14,7 +14,7 @@ const Home = () => (
             playsInline
             className="home-bg-video"
         >
-            <source src={VIDEO_SOURCES.home_vd} type="video/mp4" />
+            <source src={VIDEO_SOURCES.backGroundVideo} type="video/mp4" />
             Your browser does not support the video tag.
         </video>
 

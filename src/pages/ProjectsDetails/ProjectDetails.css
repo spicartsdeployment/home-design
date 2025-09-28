@@ -32,6 +32,12 @@
 .project-info-container p {
     color: #fff;
     margin-bottom: 30px;
+    font-size: 0.9rem;
+    font-family: 'Inter', sans-serif;
+    font-style: italic;
+    /* white-space: pre-line; */
+    padding: 7px;
+
 }
 
 .project-info-container .project-hero-img {

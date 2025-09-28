@@ -65,15 +65,15 @@ const Contact = () => {
         <div className="contact-left">
           <div className="contact-info">
             <div className="contact-info-block">
-              <div className="contact-value">info@home-design.com</div>
-              <div className="contact-value">+91 8888 888 888</div>
+              <div className="contact-value">Agara-Associates.com</div>
+              <div className="contact-value">+91 9515 101 986</div>
             </div>
             <div className="contact-label">Address:
               <address className="contact-address">
-                Home Design <br />
-                Plot No. 888, <br />
-                Rd. No. 88, Kukatpally, <br />
-                Hyderabad – 500085
+                Agara Associates <br />
+                Plot No. 26, <br />
+                sector-2, HUDA Techno Enclave, HITEC City, <br />
+                Hyderabad, Telangana – 500081
               </address>
             </div>
           </div>

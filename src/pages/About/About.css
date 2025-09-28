@@ -52,11 +52,11 @@
 }
 
 .overlay p {
-   font-size: 0.9rem;
+  font-size: 0.9rem;
   line-height: 1.5;
-  /* white-space: pre-line;  */
+  white-space: pre-line;
   font-family: 'Inter', sans-serif;
- 
+
   font-style: italic;
 }
 

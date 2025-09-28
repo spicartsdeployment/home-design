@@ -1,4 +1,5 @@
 import home_vd from './assets/videos/home_vd.mp4';
+import backGroundVideo from './assets/videos/agarabackground.mp4';
 
 import teamImg from './assets/images/team-img.png';
 import img1 from './assets/images/img-1.png';
@@ -83,23 +84,139 @@ export const Services_Images = [
 ]
 
 export const VIDEO_SOURCES = {
-  home_vd,
+  backGroundVideo,
 };
 
 
 export const project_info = [
-  { id: 1, title: "Flat No 102, Narsingi", subTittle: "Resedential", img: project1Img, images: project1_Images, description: "This project focuses on creating a contemporary villa that balances aesthetics, functionality, and sustainability. The design integrates open-plan living spaces with natural light and ventilation, incorporating large glass panels and green terraces. The villa’s layout emphasizes connectivity between indoor and outdoor areas while maintaining privacy for the residents. Materials were chosen to complement the natural surroundings, and energy-efficient systems were integrated to minimize environmental impact." },
-  { id: 2, title: "Penthouse, Hi-tech city", subTittle: "Mixed Use", img: project2Img, images: project2_Images, description: "This project focuses on creating a contemporary villa that balances aesthetics, functionality, and sustainability. The design integrates open-plan living spaces with natural light and ventilation, incorporating large glass panels and green terraces. The villa’s layout emphasizes connectivity between indoor and outdoor areas while maintaining privacy for the residents. Materials were chosen to complement the natural surroundings, and energy-efficient systems were integrated to minimize environmental impact." },
-  { id: 3, title: "Farm House, Maheswaram", subTittle: "Resedential", img: project3Img, images: project3_Images, description: "This project focuses on creating a contemporary villa that balances aesthetics, functionality, and sustainability. The design integrates open-plan living spaces with natural light and ventilation, incorporating large glass panels and green terraces. The villa’s layout emphasizes connectivity between indoor and outdoor areas while maintaining privacy for the residents. Materials were chosen to complement the natural surroundings, and energy-efficient systems were integrated to minimize environmental impact." },
-  { id: 4, title: "Villa, Bowenapally", subTittle: "Resedential", img: project4Img, images: project4_Images, description: "This project focuses on creating a contemporary villa that balances aesthetics, functionality, and sustainability. The design integrates open-plan living spaces with natural light and ventilation, incorporating large glass panels and green terraces. The villa’s layout emphasizes connectivity between indoor and outdoor areas while maintaining privacy for the residents. Materials were chosen to complement the natural surroundings, and energy-efficient systems were integrated to minimize environmental impact." },
-  { id: 5, title: "White Ridge Hotel, Hi-tech City", subTittle: "Hospitality", img: project1Img, images: project2_Images, description: "This project focuses on creating a contemporary villa that balances aesthetics, functionality, and sustainability. The design integrates open-plan living spaces with natural light and ventilation, incorporating large glass panels and green terraces. The villa’s layout emphasizes connectivity between indoor and outdoor areas while maintaining privacy for the residents. Materials were chosen to complement the natural surroundings, and energy-efficient systems were integrated to minimize environmental impact." },
-  { id: 6, title: "Aparatment, Machilipatnam", subTittle: "Resedential", img: project6Img, images: project6_Images, description: "This project focuses on creating a contemporary villa that balances aesthetics, functionality, and sustainability. The design integrates open-plan living spaces with natural light and ventilation, incorporating large glass panels and green terraces. The villa’s layout emphasizes connectivity between indoor and outdoor areas while maintaining privacy for the residents. Materials were chosen to complement the natural surroundings, and energy-efficient systems were integrated to minimize environmental impact." },
-  { id: 7, title: "Apartment, Kondapur", subTittle: "Resedential", img: project1Img, images: project2_Images, description: "This project focuses on creating a contemporary villa that balances aesthetics, functionality, and sustainability. The design integrates open-plan living spaces with natural light and ventilation, incorporating large glass panels and green terraces. The villa’s layout emphasizes connectivity between indoor and outdoor areas while maintaining privacy for the residents. Materials were chosen to complement the natural surroundings, and energy-efficient systems were integrated to minimize environmental impact." },
-  { id: 8, title: "Vasavika Brindavanam Layout, Bengaluru", subTittle: "Hospitality", img: project8Img, images: project8_Images, description: "This project focuses on creating a contemporary villa that balances aesthetics, functionality, and sustainability. The design integrates open-plan living spaces with natural light and ventilation, incorporating large glass panels and green terraces. The villa’s layout emphasizes connectivity between indoor and outdoor areas while maintaining privacy for the residents. Materials were chosen to complement the natural surroundings, and energy-efficient systems were integrated to minimize environmental impact." },
-  { id: 9, title: "Villa Layout, Kadthal", subTittle: "Resedential", img: project9Img, images: project2_Images, description: "This project focuses on creating a contemporary villa that balances aesthetics, functionality, and sustainability. The design integrates open-plan living spaces with natural light and ventilation, incorporating large glass panels and green terraces. The villa’s layout emphasizes connectivity between indoor and outdoor areas while maintaining privacy for the residents. Materials were chosen to complement the natural surroundings, and energy-efficient systems were integrated to minimize environmental impact." },
-  { id: 10, title: "Chinthala Residence, Bollaram", subTittle: "Resedential", img: project10Img, images: project10_Images, description: "This project focuses on creating a contemporary villa that balances aesthetics, functionality, and sustainability. The design integrates open-plan living spaces with natural light and ventilation, incorporating large glass panels and green terraces. The villa’s layout emphasizes connectivity between indoor and outdoor areas while maintaining privacy for the residents. Materials were chosen to complement the natural surroundings, and energy-efficient systems were integrated to minimize environmental impact." },
-  { id: 11, title: "Club Taberna, Jublee Hills", subTittle: "F&B Interior", img: project11Img, images: project11_Images, description: "This project focuses on creating a contemporary villa that balances aesthetics, functionality, and sustainability. The design integrates open-plan living spaces with natural light and ventilation, incorporating large glass panels and green terraces. The villa’s layout emphasizes connectivity between indoor and outdoor areas while maintaining privacy for the residents. Materials were chosen to complement the natural surroundings, and energy-efficient systems were integrated to minimize environmental impact." },
-  { id: 12, title: "Farmland Layout, Kotra", subTittle: "Resedential", img: project12Img, images: project2_Images, description: "This project focuses on creating a contemporary villa that balances aesthetics, functionality, and sustainability. The design integrates open-plan living spaces with natural light and ventilation, incorporating large glass panels and green terraces. The villa’s layout emphasizes connectivity between indoor and outdoor areas while maintaining privacy for the residents. Materials were chosen to complement the natural surroundings, and energy-efficient systems were integrated to minimize environmental impact." },
+  {
+    id: 1,
+    title: "Flat No 102, Narsingi",
+    subTittle: "Resedential",
+    img: project1Img, images: project1_Images,
+    description: `A refined residential interior that blends timeless elegance with modern functionality. 
+    Classic detailing and rich materials create a space that is both sophisticated and inviting. Every corner is thoughtfully designed to enhance comfort while maintaining a sense of luxury.
+    Warm tones and layered textures bring depth and character to the home. This project is a celebration of enduring style, craftsmanship, and graceful living.`
+  },
+
+  {
+    id: 2,
+    title: "Penthouse, Hi-tech city",
+    subTittle: "Mixed Use",
+    img: project2Img, images: project2_Images,
+    description: `This mixed-use penthouse embraces a rustic design language that blends natural charm with contemporary living.
+     Exposed textures, earthy tones, and raw finishes create an atmosphere that feels grounded yet luxurious. The spatial planning seamlessly integrates functionality with aesthetic warmth. 
+     Thoughtful material choices and handcrafted details add character and depth to every corner. The result is a timeless retreat that celebrates organic beauty and modern sophistication.`
+  },
+
+  {
+    id: 3,
+    title: "Farm House, Maheswaram",
+    subTittle: "Resedential",
+    img: project3Img, images: project3_Images,
+    description: `This modern villa is designed as a serene retreat, seamlessly merging architecture with expansive landscape. 
+        Open spaces and large green vistas create a harmonious connection between indoor comfort and outdoor living. The design emphasizes simplicity and elegance, with clean lines and contemporary forms. 
+        Natural light and flowing spatial layouts enhance the sense of openness and tranquility. It’s a sophisticated escape that celebrates modern living amidst nature’s vast beauty.`
+  },
+
+  {
+    id: 4,
+    title: "Villa–Bowenpally, Hyderabad",
+    subTittle: "Resedential",
+    img: project4Img,
+    images: project4_Images,
+    description: `This residence showcases a refined transformation through thoughtfully renovated interiors with a modern touch.
+     Sleek finishes and contemporary design elements breathe new life into the villa while preserving its original charm. Open layouts and curated material palettes create a seamless flow between spaces.
+      Every detail is crafted to enhance comfort, functionality, and aesthetic appeal. The result is a timeless home that blends classic character with modern sophistication.`
+  },
+
+
+  {
+    id: 5,
+    title: "White Ridge Hotel, Hi-tech City",
+    subTittle: "Hospitality",
+    img: project1Img, images: project2_Images,
+    description: `A landmark in luxury hospitality, this project embodies refined design and impeccable construction.
+         Every space is crafted to deliver an elevated guest experience, combining sophistication with comfort. Premium materials, elegant detailing, and thoughtful spatial planning define the hotel’s timeless character.
+        The architecture seamlessly integrates functionality with grandeur, creating an inviting yet distinguished ambiance. White Ridge stands as a testament to premium design excellence and world-class craftsmanship.`
+  },
+
+
+  {
+    id: 6,
+    title: "Aparatment, Machilipatnam",
+    subTittle: "Resedential",
+    img: project6Img, images: project6_Images,
+    description: `This residential project stands out with a striking modern elevation that blends innovation with visual appeal.
+        The use of MS box sections, jaali brickwork, and textured finishes creates a dynamic architectural language. Each façade is thoughtfully detailed, offering depth, rhythm, and character from every angle.
+         The design balances contemporary aesthetics with structural integrity and durability. It’s a bold statement in modern residential architecture, combining creativity with lasting functionality.`
+  },
+
+
+  {
+    id: 7,
+    title: "Apartment, Kondapur",
+    subTittle: "Resedential",
+    img: project1Img,
+    images: project2_Images,
+    description: `This modern residential project showcases innovative space planning within a compact urban footprint. Designed with G+4 floors, it features efficiently planned 1BHK units on the lower levels and an exclusive private duplex on the top floor.
+     The architecture optimizes vertical space while maintaining comfort, functionality, and aesthetic balance. Clean lines, modern finishes, and smart layouts enhance both usability and visual appeal.
+     It’s a testament to thoughtful design that transforms a narrow site into a sophisticated urban living experience.`
+  },
+
+  {
+    id: 8,
+    title: "Vasavika Brindavanam Layout, Bengaluru",
+    subTittle: "Hospitality",
+    img: project8Img,
+    images: project8_Images,
+    description: `This hospitality project embodies modern design principles that blend elegance with functionality. 
+         Clean lines, contemporary finishes, and thoughtfully planned spaces create an inviting and sophisticated environment. Every detail, from interiors to exteriors, is curated to enhance guest comfort and experience. 
+         The architecture balances style with practicality, resulting in a visually striking yet welcoming atmosphere. Vasavika Brindavanam stands as a testament to modern hospitality excellence.`
+  },
+  {
+    id: 9,
+
+    title: "Villa Layout, Kadthal",
+    subTittle: "Resedential",
+    img: project9Img,
+    images: project2_Images,
+    description: `This residential plotted layout is thoughtfully designed to offer a harmonious living environment with all modern amenities.
+          Each plot is strategically positioned to optimize space, light, and connectivity within the community. The design emphasizes seamless integration of landscapes, roads, and utility infrastructure for a comfortable lifestyle.
+           Attention to detail ensures both functionality and aesthetic appeal throughout the layout. It’s a comprehensive residential plan that combines convenience, elegance, and modern living standards.`
+  },
+  {
+    id: 10,
+    title: "Chinthala Residence, Bollaram",
+    subTittle: "Resedential",
+    img: project10Img,
+    images: project10_Images,
+    description: `This modern residential project combines striking elevation with luxurious, spacious interiors. Thoughtful layouts and contemporary design elements create a sense of openness and sophistication.
+        Every space is meticulously planned to balance comfort, functionality, and elegance. 
+        Premium finishes and attention to detail enhance the overall aesthetic appeal. Chinthala Residence exemplifies refined living through modern architecture and timeless design`
+  },
+
+
+
+  {
+    id: 11,
+    title: "Club Taberna, Jublee Hills",
+    subTittle: "F&B Interior",
+    img: project11Img,
+    images: project11_Images,
+    description: `This F&B interior project revitalizes the space with a striking elevation design complemented by carefully executed interior renovations.
+         Subtle updates and refined detailing enhance the overall ambiance while maintaining the venue’s character. The design balances aesthetic appeal with functionality, creating an inviting atmosphere for patrons.
+          Thoughtful material choices and finishes elevate the experience without overwhelming the existing charm. Club Taberna stands as a blend of contemporary style and refined hospitality design.`},
+
+  {
+    id: 12,
+    title: "Farmland Layout, Kotra",
+    subTittle: "Resedential",
+    img: project12Img,
+    images: project2_Images,
+    description: `This residential farmland layout is thoughtfully designed to optimize land use while maintaining a natural, open environment.
+     Each plot is strategically positioned to ensure accessibility, light, and connectivity across the site. The design integrates practical infrastructure with the serene beauty of the landscape.
+      Careful planning enhances both functionality and aesthetic appeal for future owners. It’s a well-conceived layout that balances modern living requirements with the tranquility of rural surroundings.`}
 
 ]
 
@@ -108,13 +225,13 @@ export const teamData = {
   description: {
     title: "About us",
     text: `
-      A slight tilt of the Earth’s axis brings about the change of seasons, patterns of light and darkness and the 
-      flow of life on our planet. This 25 degrees shift, with a tolerance of half a degree is an unmissable, 
-      intrinsic feature of the grand design of nature & the cosmos. 
+     At Agara Associates, we believe architecture is more than just building spaces — it’s about crafting experiences that inspire, connect, and endure. 
+     Guided by creativity and driven by a passion for design, we approach every project as an opportunity to transform ideas into timeless spaces.  
 
-      25 Degrees Design Shift or 25 DDS is an architecture & design studio aligned with expansive contexts 
-      which are deeply connected with the living world. The naming and symbolism behind 25 DDS has grown 
-      to create constant ripples on our way of work, guiding us to be conscious, clear and contextual.
+    With a seamless blend of architecture, interiors, landscape, and construction, we deliver holistic solutions that balance aesthetics with functionality. 
+    Our team thrives on innovation and collaboration, ensuring that every project reflects our client’s vision while embracing sustainability, context, and character. 
+
+    From concept to completion, Agara Associates is committed to shaping environments that tell stories, evoke emotion, and stand as landmarks of thoughtful design.
     `,
   },
   teamImage: teamImg, // ✅ big group photo
