@@ -80,7 +80,7 @@ const Contact = () => {
           </div>
           <div className="contact-icons">
 
-            <a href="#" className="link" aria-label="Facebbol" target="_blank">
+            <a href="https://wa.me/+919515101986" className="link" aria-label="Whatsapp" target="_blank">
               <FaWhatsapp size={28} />
             </a>
             <a href="https://www.instagram.com/agaraassociates/" className="link" aria-label="Instagram" target="_blank">
