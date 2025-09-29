@@ -1,5 +1,6 @@
 import React, { useState } from "react";
-import { FaInstagram, FaEnvelope, FaPhone, FaFacebook } from "react-icons/fa";
+import { FaInstagram, FaEnvelope, FaPhone, FaFacebook, FaMap, FaWhatsapp } from "react-icons/fa";
+import { MdLocationOn } from "react-icons/md";
 import "./Contact.css";
 import emailjs from 'emailjs-com';
 
@@ -80,7 +81,7 @@ const Contact = () => {
           <div className="contact-icons">
 
             <a href="#" className="link" aria-label="Facebbol" target="_blank">
-              <FaFacebook size={28} />
+              <FaWhatsapp size={28} />
             </a>
             <a href="https://www.instagram.com/agaraassociates/" className="link" aria-label="Instagram" target="_blank">
               <FaInstagram size={28} />
@@ -88,9 +89,10 @@ const Contact = () => {
             <a href="mailto:agaraassociates@gmail.com" className="link" aria-label="Email" target="_blank">
               <FaEnvelope size={28} />
             </a>
-            <a href="tel:+919000229023" className="link" aria-label="Phone" target="_blank">
+            {/* <a href="tel:+919000229023" className="link" aria-label="Phone" target="_blank">
               <FaPhone size={28} />
-            </a>
+            </a> */}
+            <a href="https://maps.app.goo.gl/vnjAtGJGXNRVDMJk9" aria-label="maps" target="_blank"><MdLocationOn size={28} /></a>
           </div>
         </div>
 

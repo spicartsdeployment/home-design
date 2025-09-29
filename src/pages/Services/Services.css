@@ -69,9 +69,17 @@
   color: #fff;
   text-align: center;
   font-size: 0.9rem;
+  /* font-family: 'Inter', sans-serif;
+  font-style: italic; */
+  padding: 5px;
+}
+
+.flip-card-back p {
+  color: #fff;
+  padding: 7px;
   font-family: 'Inter', sans-serif;
   font-style: italic;
-  padding: 5px;
+  font-size: 0.9rem;
 }
 
 .apart-section {
@@ -170,7 +178,7 @@
 
 .feedback h3 {
   font-family: 'Inter', sans-serif;
-  font-size: 1.3rem;
+  font-size: 1.1rem;
   font-style: italic;
 }
 

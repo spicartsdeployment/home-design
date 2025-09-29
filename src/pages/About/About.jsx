@@ -15,13 +15,30 @@ const About = () => {
           {/* <img src={teamData.teamImage} alt="Team" className="team-photo" /> */}
           <div className="overlay">
             <p>{teamData.description.text}</p>
+
+            <div className="company-members">
+              <h3>Managing Partners</h3>
+
+              <div className="members-box">
+                <div className="left-member">
+                  <h3>Ar. Adarsh Pidugu</h3>
+                  <p>B.arch, GITAM University</p>
+                </div>
+                <div className="right-member">
+                  <h3>Ar. Rahul Kumar Reddyrajula</h3>
+                  <p>B.arch, GITAM University</p>
+
+                </div>
+              </div>
+            </div>
           </div>
+
         </div>
 
         {/* Members */}
 
 
-        {teamData?.members?.length > 0 ? (
+        {/* {teamData?.members?.length > 0 ? (
           teamData.members.map((member, index) => (
             <div key={member.id} className={`div${index + 2} member-card`}>
               <img src={member.img} alt={member.name} />
@@ -33,7 +50,7 @@ const About = () => {
           ))
         ) : (
           <p>No members found</p>
-        )}
+        )} */}
 
 
         {/* {teamData.members.map((member, index) => (

@@ -225,13 +225,14 @@ export const teamData = {
   description: {
     title: "About us",
     text: `
-     At Agara Associates, we believe architecture is more than just building spaces — it’s about crafting experiences that inspire, connect, and endure. 
-     Guided by creativity and driven by a passion for design, we approach every project as an opportunity to transform ideas into timeless spaces.  
+    At Agara Associates, we believe architecture is more than just building spaces — it’s about crafting experiences that inspire, connect, and endure.
+     Guided by creativity and driven by a passion for design, we approach every project as an opportunity to transform ideas into timeless spaces.
 
-    With a seamless blend of architecture, interiors, landscape, and construction, we deliver holistic solutions that balance aesthetics with functionality. 
-    Our team thrives on innovation and collaboration, ensuring that every project reflects our client’s vision while embracing sustainability, context, and character. 
+     Our hexagon logo reflects the six pillars that guide this journey: Design, Innovation, Sustainability, Quality, Functionality, and Client Focus.
+     With a seamless blend of architecture, interiors, landscape, and construction, we deliver holistic solutions that balance aesthetics with performance.
 
-    From concept to completion, Agara Associates is committed to shaping environments that tell stories, evoke emotion, and stand as landmarks of thoughtful design.
+   From concept to completion, our team thrives on innovation and collaboration, ensuring every project reflects our client’s vision while embracing sustainability, context,
+    and character.Together, these six sides form a complete and balanced approach to shaping environments that tell stories, evoke emotion, and stand as landmarks of thoughtful design. 
     `,
   },
   teamImage: teamImg, // ✅ big group photo
