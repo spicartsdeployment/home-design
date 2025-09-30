@@ -14,19 +14,19 @@ const About = () => {
         <div className="div1 team-hero">
           {/* <img src={teamData.teamImage} alt="Team" className="team-photo" /> */}
           <div className="overlay">
-            <p>{teamData.description.text}</p>
+            <p className="about-description">{teamData.description.text}</p>
 
             <div className="company-members">
-              <h3>Managing Partners</h3>
+              <h3>MANAGING PARTNERS</h3>
 
               <div className="members-box">
                 <div className="left-member">
-                  <h3>Ar. Adarsh Pidugu</h3>
-                  <p>B.arch, GITAM University</p>
+                  <h3>AR. ADARSH PIDUGU</h3>
+                  <p>B.Arch, GITAM University</p>
                 </div>
                 <div className="right-member">
-                  <h3>Ar. Rahul Kumar Reddyrajula</h3>
-                  <p>B.arch, GITAM University</p>
+                  <h3>AR. RAHUL KUMAR REDDIRAJULA</h3>
+                  <p>B.Arch, GITAM University</p>
 
                 </div>
               </div>

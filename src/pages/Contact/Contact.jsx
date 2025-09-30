@@ -66,7 +66,7 @@ const Contact = () => {
         <div className="contact-left">
           <div className="contact-info">
             <div className="contact-info-block">
-              <div className="contact-value">Agara-Associates.com</div>
+              <div className="contact-value">agaraassociates@gmail.com</div>
               <div className="contact-value">+91 9515 101 986</div>
             </div>
             <div className="contact-label">Address:
@@ -81,18 +81,18 @@ const Contact = () => {
           <div className="contact-icons">
 
             <a href="https://wa.me/+919515101986" className="link" aria-label="Whatsapp" target="_blank">
-              <FaWhatsapp size={28} />
+              <FaWhatsapp size={35} />
             </a>
             <a href="https://www.instagram.com/agaraassociates/" className="link" aria-label="Instagram" target="_blank">
-              <FaInstagram size={28} />
+              <FaInstagram size={35} />
             </a>
             <a href="mailto:agaraassociates@gmail.com" className="link" aria-label="Email" target="_blank">
-              <FaEnvelope size={28} />
+              <FaEnvelope size={35} />
             </a>
             {/* <a href="tel:+919000229023" className="link" aria-label="Phone" target="_blank">
               <FaPhone size={28} />
             </a> */}
-            <a href="https://maps.app.goo.gl/vnjAtGJGXNRVDMJk9" aria-label="maps" target="_blank"><MdLocationOn size={28} /></a>
+            <a href="https://maps.app.goo.gl/vnjAtGJGXNRVDMJk9" aria-label="maps" target="_blank"><MdLocationOn size={35} /></a>
           </div>
         </div>
 

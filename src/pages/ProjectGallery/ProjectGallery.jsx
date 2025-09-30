@@ -68,13 +68,28 @@ export default function ProjectGallery() {
 
                     >
 
-                        {project.images.map((member, i) => (
+                        {project.images.map((item, i) =>
+                        (
                             <SwiperSlide key={i}>
                                 <div className="slider-image">
-                                    <img src={member}
-                                        alt={`Slide ${i + 1}`}
+                                    {item.type === "image" ? (
+                                        <img src={item.src}
+                                            alt={`Slide ${i + 1}`}
 
-                                    />
+                                        />)
+                                        :
+                                        (
+                                            <video
+                                                autoPlay
+                                                loop
+                                                muted
+                                                playsInline
+                                                className="gallery_video"
+
+                                            >
+                                                <source src={item.src} />
+                                            </video>
+                                        )}
                                 </div>
 
                             </SwiperSlide>

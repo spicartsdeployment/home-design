@@ -51,13 +51,13 @@
   margin-bottom: 0.8rem;
 }
 
-.overlay p {
+.overlay .about-description {
   font-size: 0.9rem;
   line-height: 1.5;
   white-space: pre-line;
   font-family: 'Inter', sans-serif;
 
-  font-style: italic;
+  font-style: regular;
 }
 
 /* Member cards */
@@ -94,9 +94,9 @@
   justify-content: center;
   text-align: center;
   margin-top: 50px;
-  font-family: 'Inter', sans-serif;
-  font-style: italic;
-  font-size: 1.0rem;
+  /* font-family: 'Inter', sans-serif;
+  font-style: regular; */
+  font-size: 1.5rem;
   padding: 10px;
 }
 
@@ -107,15 +107,30 @@
   align-items: center;
   justify-content: space-between;
   flex-direction: row;
+  margin-top: 20px;
+  gap: 20px;
 }
 
 .left-member,
 .right-member {
   font-size: 0.9rem;
-  font-family: 'Inter', sans-serif;
-  font-style: italic;
+  /* font-family: 'Inter', sans-serif;
+  font-style: italic; */
   padding: 8px;
 
+}
+
+.left-member h3,
+.right-member h3 {
+  font-size: 1.2rem;
+
+}
+
+.left-member,
+.right-member {
+  background: #555353;
+  border-radius: 7px;
+  padding: 7px 11px;
 }
 
 /* Desktop layout (≥768px) → members in a row */
@@ -156,6 +171,8 @@
     justify-content: space-between;
     flex-direction: column;
   }
+
+
 }
 
 /* Mobile: stack all vertically (≤767px) */

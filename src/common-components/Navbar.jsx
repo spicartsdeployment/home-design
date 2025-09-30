@@ -2,6 +2,7 @@ import { Link, useLocation, useNavigate } from "react-router-dom";
 import React from "react";
 
 import { IMAGE_SOURCES } from "../constants";
+import { nav_icons } from '../constants';
 
 import {
     FaHome,
@@ -18,10 +19,10 @@ function Navbar({ active, isMobile, scrollToSection }) {
 
     const sections = [
         // { id: "home", label: "HOME", icon: <FaHome />, type: "scroll" },
-        { id: "services", label: "Services", icon: <FaBuilding />, type: "scroll" },
-        { id: "projects", label: "Projects", icon: <FaCouch />, type: "page" },
-        { id: "about", label: "About us", icon: <FaInfoCircle />, type: "scroll" },
-        { id: "contact", label: "Contact", icon: <FaEnvelope />, type: "scroll" },];
+        { id: "services", label: "Services", icon: <img src={nav_icons.services_icon} alt="" style={{ height: "25px" }} />, type: "scroll" },
+        { id: "projects", label: "Projects", icon: <img src={nav_icons.projects_icon} alt="" style={{ height: "25px" }} />, type: "page" },
+        { id: "about", label: "About us", icon: <img src={nav_icons.aboutus_icon} alt="" style={{ height: "25px" }} />, type: "scroll" },
+        { id: "contact", label: "Contact", icon: <img src={nav_icons.contact_icon} alt="" style={{ height: "25px" }} />, type: "scroll" },];
 
     const handleScrollNav = (sectionId) => {
         if (location.pathname === '/' && scrollToSection) {
@@ -53,12 +54,12 @@ function Navbar({ active, isMobile, scrollToSection }) {
                     <li key={sec.id}>
                         {sec.type === 'scroll' ? (
                             <button className={`app-navbar-btn ${active === sec.id ? "active" : ""}`} onClick={() => handleScrollNav(sec.id)}>
-                                {isMobile ? sec.icon : <span className="nav-label">{sec.label}</span>}
+                                {isMobile ? <span className="icons">{sec.icon}</span> : <span className="nav-label">{sec.label}</span>}
                             </button>) :
                             (
                                 <button className={`app-navbar-btn ${location.pathname === "/projects" ? "active" : ""}`}
                                     onClick={() => handleNavigate('/projects')}>
-                                    {isMobile ? sec.icon : <span className="nav-label">{sec.label}</span>}
+                                    {isMobile ? <span className="icons">{sec.icon}</span> : <span className="nav-label">{sec.label}</span>}
                                 </button>
                             )}
                     </li>

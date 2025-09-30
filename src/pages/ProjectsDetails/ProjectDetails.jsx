@@ -40,25 +40,35 @@ export default function ProjectDetails() {
             />
             <div className="project-info-container">
                 <h1>{project.title}</h1>
-                {/* <div className="project-hero-img">
-                    <img src={project.img} alt="" />
 
-                </div> */}
 
                 <p>{project.description}</p>
                 <div className="project-img-container">
-                    {project.images.map((image, idx) => (
+                    {project.images.map((item, idx) =>
+                        item.type === "video" ?
+                            (
+                                <video
+                                    autoPlay
+                                    loop
+                                    muted
+                                    playsInline
+                                    className="project_video"
+                                    onClick={() => navigate(`/project/${id}/gallery?index=${idx}`)}
+                                >
+                                    <source src={item.src} />
+                                </video>
+                            )
+                            :
+                            (
+                                <img
+                                    key={idx}
+                                    src={item.src}
+                                    onClick={() => navigate(`/project/${id}/gallery?index=${idx}`)}
 
-
-                        <img
-                            key={idx}
-                            src={image}
-                            onClick={() => navigate(`/project/${id}/gallery?index=${idx}`)}
-
-                            alt="img"
-                        />
-
-                    ))}
+                                    alt="img"
+                                />
+                            )
+                    )}
                 </div>
             </div>
         </div>

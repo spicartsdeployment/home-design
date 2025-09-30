@@ -1,5 +1,7 @@
 import home_vd from './assets/videos/home_vd.mp4';
 import backGroundVideo from './assets/videos/agarabackground.mp4';
+import kadthalVideo from './assets/videos/kadthal.mp4';
+import whiteridge from './assets/videos/whiteridge.mp4';
 
 import teamImg from './assets/images/team-img.png';
 import img1 from './assets/images/img-1.png';
@@ -15,52 +17,156 @@ import agaraAssociatesLogo from './assets/images/Aagara Associates logo.png';
 import project1Img from './assets/images/project_images/FLAT_NO_102_NARSINGI_01/hero.jpg';
 import project2Img from './assets/images/project_images/PENTHOUSE_HI_TECH_CITY/hero.jpg';
 import project3Img from './assets/images/project_images/FARM_HOUSE_MAHESHWARAM/hero.jpg';
-import project4Img from './assets/images/project_images/VILLA_BOWENPALLY/hero.jpg'
-// import project5Img from './assets/images/project_images/WHITE_RIDGE_HOTEL_HI_TECH_CITY';
+import project4Img from './assets/images/project_images/VILLA_BOWENPALLY/hero.png'
+import project5Img from './assets/images/project_images/WHITE_RIDGE_HOTEL_HI_TECH_CITY/hero.jpg';
 import project6Img from './assets/images/project_images/APARTMENT_MACHILIPATNAM/hero.jpg'
-//import project7Img from './assets/images/project_images/APARTMENT_KONDAPUR/';
+import project7Img from './assets/images/project_images/APARTMENT_KONDAPUR/hero.png';
 import project8Img from './assets/images/project_images/VASAVIKA_BRINDAVANAM_LAYOUT_BENGALURU/hero.jpg'
 import project9Img from './assets/images/project_images/VILLA_LAYOUT_KADTHAL/hero.jpg';
 import project10Img from './assets/images/project_images/CHINTHALA RESIDENCE_BOLLARAM/hero.jpg';
 import project11Img from './assets/images/project_images/CLUB_TABERNA_JUBLIEE HILLS/hero.jpg';
 import project12Img from './assets/images/project_images/FARMLAND_LAYOUT_KOTRA/floorplan.jpg';
+import project13Img from './assets/images/project_images/LANDSCAPE_LAYOUT_NAGARKURNOOL/hero.jpg';
+import project14Img from './assets/images/project_images/WHITE_RIDGE_FARM_HOUSE_YADADRI/hero.jpg';
+
+
 
 
 const project1_Images = Object.values(
   import.meta.glob('./assets/images/project_images/FLAT_NO_102_NARSINGI_01/*.{png,jpg,jpeg,svg}', { eager: true })
-).map((module) => module?.default || module);
+).map((module) => ({
+  type: "image",
+  src: module?.default || module
+}));
 console.log('project1_Images: ,......................,khjgfh', project1_Images);
 
 
 const project2_Images = Object.values(
   import.meta.glob('./assets/images/project_images/PENTHOUSE_HI_TECH_CITY/*.{png,jpg,jpeg,svg}', { eager: true })
-).map((module) => module?.default || module);
+).map((module) => ({
+  type: "image",
+  src: module?.default || module
+}));
 
 const project3_Images = Object.values(
   import.meta.glob('./assets/images/project_images/FARM_HOUSE_MAHESHWARAM/*.{png,jpg,jpeg,svg}', { eager: true })
-).map((module) => module?.default || module);
+).map((module) => ({
+  type: "image",
+  src: module?.default || module
+}));
 
 const project4_Images = Object.values(
   import.meta.glob('./assets/images/project_images/VILLA_BOWENPALLY/*.{png,jpg,jpeg,svg}', { eager: true })
-).map((module) => module?.default || module);
+).
+  map((module) => ({
+    type: "image",
+    src: module?.default || module
+  }));
+
+
+
+
+const project5_Images = Object.values(
+  import.meta.glob('./assets/images/project_images/WHITE_RIDGE_HOTEL_HI_TECH_CITY/*.{png,jpg,jpeg,svg}', { eager: true })
+).
+  map((module) => ({
+    type: "image",
+    src: module?.default || module
+  }));
+
+project5_Images.unshift({
+  type: "video",
+  src: whiteridge
+})
+
+
 
 const project6_Images = Object.values(
   import.meta.glob('./assets/images/project_images/APARTMENT_MACHILIPATNAM/*.{png,jpg,jpeg,svg}', { eager: true })
-).map((module) => module?.default || module);
+).
+  map((module) => ({
+    type: "image",
+    src: module?.default || module
+  }));
+
+
+const project7_Images = Object.values(
+  import.meta.glob('./assets/images/project_images/APARTMENT_KONDAPUR/*.{png,jpg,jpeg,svg}', { eager: true })
+).
+  map((module) => ({
+    type: "image",
+    src: module?.default || module
+  }));
+
+
 
 const project8_Images = Object.values(
   import.meta.glob('./assets/images/project_images/VASAVIKA_BRINDAVANAM_LAYOUT_BENGALURU/*.{png,jpg,jpeg,svg}', { eager: true })
-).map((module) => module?.default || module);
+).map((module) => ({
+  type: "image",
+  src: module?.default || module
+}));
+
+const project9_Images = Object.values(
+  import.meta.glob('./assets/images/project_images/VILLA_LAYOUT_KADTHAL/*.{png,jpg,jpeg,svg}',
+    { eager: true }))
+  .map((module) => ({
+    type: "image",
+    src: module?.default || module
+  }));
 
 const project10_Images = Object.values(
   import.meta.glob('./assets/images/project_images/CHINTHALA RESIDENCE_BOLLARAM/*.{png,jpg,jpeg,svg}', { eager: true })
-).map((module) => module?.default || module);
+).map((module) => ({
+  type: "image",
+  src: module?.default || module
+}));
 
 const project11_Images = Object.values(
   import.meta.glob('./assets/images/project_images/CLUB_TABERNA_JUBLIEE HILLS/*.{png,jpg,jpeg,svg}', { eager: true })
-).map((module) => module?.default || module);
+).map((module) => ({
+  type: "image",
+  src: module?.default || module
+}));
 
 
+const project13_Images = Object.values(
+  import.meta.glob('./assets/images/project_images/LANDSCAPE_LAYOUT_NAGARKURNOOL/*.{png,jpg,jpeg,svg}', { eager: true })
+).map((module) => ({
+  type: "image",
+  src: module?.default || module
+}));
+
+const project14_Images = Object.values(
+  import.meta.glob('./assets/images/project_images/WHITE_RIDGE_FARM_HOUSE_YADADRI/*.{png,jpg,jpeg,svg}', { eager: true })
+).map((module) => ({
+  type: "image",
+  src: module?.default || module
+}));
+
+
+
+
+// import project_icon from './assets/images/Navbar_icons/project_icon.jpg';
+// import services_icon from './assets/images/Navbar_icons/services_icon.jpg';
+import services_icon from './assets/images/Navbar_icons/services_icon.png';
+import projects_icon from './assets/images/Navbar_icons/projects_ico.png';
+import aboutus_icon from './assets/images/Navbar_icons/aboutUs_icon.png';
+import contact_icon from './assets/images/Navbar_icons/contactus_icon.png';
+
+
+project9_Images.unshift({
+  type: "video",
+  src: kadthalVideo
+});
+
+
+export const nav_icons = {
+  projects_icon,
+  services_icon,
+  contact_icon,
+  aboutus_icon
+}
 
 
 
@@ -92,7 +198,7 @@ export const project_info = [
   {
     id: 1,
     title: "Flat No 102, Narsingi",
-    subTittle: "Resedential",
+    subTittle: "Residential",
     img: project1Img, images: project1_Images,
     description: `A refined residential interior that blends timeless elegance with modern functionality. 
     Classic detailing and rich materials create a space that is both sophisticated and inviting. Every corner is thoughtfully designed to enhance comfort while maintaining a sense of luxury.
@@ -112,7 +218,7 @@ export const project_info = [
   {
     id: 3,
     title: "Farm House, Maheswaram",
-    subTittle: "Resedential",
+    subTittle: "Residential",
     img: project3Img, images: project3_Images,
     description: `This modern villa is designed as a serene retreat, seamlessly merging architecture with expansive landscape. 
         Open spaces and large green vistas create a harmonious connection between indoor comfort and outdoor living. The design emphasizes simplicity and elegance, with clean lines and contemporary forms. 
@@ -122,7 +228,7 @@ export const project_info = [
   {
     id: 4,
     title: "Villa–Bowenpally, Hyderabad",
-    subTittle: "Resedential",
+    subTittle: "Residential",
     img: project4Img,
     images: project4_Images,
     description: `This residence showcases a refined transformation through thoughtfully renovated interiors with a modern touch.
@@ -135,7 +241,7 @@ export const project_info = [
     id: 5,
     title: "White Ridge Hotel, Hi-tech City",
     subTittle: "Hospitality",
-    img: project1Img, images: project2_Images,
+    img: project5Img, images: project5_Images,
     description: `A landmark in luxury hospitality, this project embodies refined design and impeccable construction.
          Every space is crafted to deliver an elevated guest experience, combining sophistication with comfort. Premium materials, elegant detailing, and thoughtful spatial planning define the hotel’s timeless character.
         The architecture seamlessly integrates functionality with grandeur, creating an inviting yet distinguished ambiance. White Ridge stands as a testament to premium design excellence and world-class craftsmanship.`
@@ -145,7 +251,7 @@ export const project_info = [
   {
     id: 6,
     title: "Aparatment, Machilipatnam",
-    subTittle: "Resedential",
+    subTittle: "Residential",
     img: project6Img, images: project6_Images,
     description: `This residential project stands out with a striking modern elevation that blends innovation with visual appeal.
         The use of MS box sections, jaali brickwork, and textured finishes creates a dynamic architectural language. Each façade is thoughtfully detailed, offering depth, rhythm, and character from every angle.
@@ -156,9 +262,9 @@ export const project_info = [
   {
     id: 7,
     title: "Apartment, Kondapur",
-    subTittle: "Resedential",
-    img: project1Img,
-    images: project2_Images,
+    subTittle: "Residential",
+    img: project7Img,
+    images: project7_Images,
     description: `This modern residential project showcases innovative space planning within a compact urban footprint. Designed with G+4 floors, it features efficiently planned 1BHK units on the lower levels and an exclusive private duplex on the top floor.
      The architecture optimizes vertical space while maintaining comfort, functionality, and aesthetic balance. Clean lines, modern finishes, and smart layouts enhance both usability and visual appeal.
      It’s a testament to thoughtful design that transforms a narrow site into a sophisticated urban living experience.`
@@ -178,9 +284,9 @@ export const project_info = [
     id: 9,
 
     title: "Villa Layout, Kadthal",
-    subTittle: "Resedential",
+    subTittle: "Residential",
     img: project9Img,
-    images: project2_Images,
+    images: project9_Images,
     description: `This residential plotted layout is thoughtfully designed to offer a harmonious living environment with all modern amenities.
           Each plot is strategically positioned to optimize space, light, and connectivity within the community. The design emphasizes seamless integration of landscapes, roads, and utility infrastructure for a comfortable lifestyle.
            Attention to detail ensures both functionality and aesthetic appeal throughout the layout. It’s a comprehensive residential plan that combines convenience, elegance, and modern living standards.`
@@ -188,7 +294,7 @@ export const project_info = [
   {
     id: 10,
     title: "Chinthala Residence, Bollaram",
-    subTittle: "Resedential",
+    subTittle: "Residential",
     img: project10Img,
     images: project10_Images,
     description: `This modern residential project combines striking elevation with luxurious, spacious interiors. Thoughtful layouts and contemporary design elements create a sense of openness and sophistication.
@@ -211,12 +317,35 @@ export const project_info = [
   {
     id: 12,
     title: "Farmland Layout, Kotra",
-    subTittle: "Resedential",
+    subTittle: "Residential",
     img: project12Img,
     images: project2_Images,
     description: `This residential farmland layout is thoughtfully designed to optimize land use while maintaining a natural, open environment.
      Each plot is strategically positioned to ensure accessibility, light, and connectivity across the site. The design integrates practical infrastructure with the serene beauty of the landscape.
-      Careful planning enhances both functionality and aesthetic appeal for future owners. It’s a well-conceived layout that balances modern living requirements with the tranquility of rural surroundings.`}
+      Careful planning enhances both functionality and aesthetic appeal for future owners. It’s a well-conceived layout that balances modern living requirements with the tranquility of rural surroundings.
+  `},
+
+  {
+    id: 13,
+    title: "Landscape layout, Nagarkurnool",
+    subTittle: "Residential",
+    img: project13Img,
+    images: project13_Images,
+    description: `This modern landscape project transforms public space into a vibrant and welcoming environment. Thoughtfully designed parks, recreational areas, and open spaces encourage community engagement and outdoor activity.
+     The layout balances aesthetics with functionality, creating a harmonious blend of greenery and amenities. Pathways, seating areas, and landscaping elements are curated to enhance user experience and visual appeal.
+      This Park stands as a testament to contemporary landscape design that promotes both leisure and connectivity.`},
+
+  {
+    id: 14,
+    title: "White ridge farmhouse, Yadagiri",
+    subTittle: "Residential",
+    img: project14Img,
+    images: project14_Images,
+    description: `This elegant residential project offers a serene countryside retreat that blends rustic charm with modern comforts. Thoughtfully designed living spaces, open landscapes, and natural surroundings create an atmosphere of tranquility and privacy.
+     The layout balances aesthetics with functionality, providing a seamless connection between indoor and outdoor areas. Architecture, materials, and sustainable elements are curated to enhance comfort, beauty, and long-term value.
+      This farmhouse stands as a testament to timeless design that promotes relaxation, luxury, and a closer connection to nature.`},
+
+
 
 ]
 
@@ -229,11 +358,11 @@ export const teamData = {
      Guided by creativity and driven by a passion for design, we approach every project as an opportunity to transform ideas into timeless spaces.
 
      Our hexagon logo reflects the six pillars that guide this journey: Design, Innovation, Sustainability, Quality, Functionality, and Client Focus.
+     Together, these six sides form a complete and balanced approach to shaping environments that tell stories, evoke emotion, and stand as landmarks of thoughtful design.
      With a seamless blend of architecture, interiors, landscape, and construction, we deliver holistic solutions that balance aesthetics with performance.
 
    From concept to completion, our team thrives on innovation and collaboration, ensuring every project reflects our client’s vision while embracing sustainability, context,
-    and character.Together, these six sides form a complete and balanced approach to shaping environments that tell stories, evoke emotion, and stand as landmarks of thoughtful design. 
-    `,
+    and character.`,
   },
   teamImage: teamImg, // ✅ big group photo
   members: [
