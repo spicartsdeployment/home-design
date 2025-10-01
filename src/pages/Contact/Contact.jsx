@@ -5,6 +5,9 @@ import "./Contact.css";
 import emailjs from 'emailjs-com';
 
 const Contact = () => {
+
+  // const Whatsapp_number = .env.REACT_APP_WHATSAPP_NUMBER;
+
   const [formData, setFormData] = useState({
     name: "",
     email: "",
@@ -73,7 +76,7 @@ const Contact = () => {
               <address className="contact-address">
                 Agara Associates <br />
                 Plot No. 26, <br />
-                sector-2, HUDA Techno Enclave, HITEC City, <br />
+                sector-2, HUDA Techno Enclave, HI-TECh City, <br />
                 Hyderabad, Telangana – 500081
               </address>
             </div>

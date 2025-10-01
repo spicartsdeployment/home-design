@@ -21,11 +21,11 @@ const About = () => {
 
               <div className="members-box">
                 <div className="left-member">
-                  <h3>AR. ADARSH PIDUGU</h3>
+                  <h3>AR. RAHUL KUMAR REDDIRAJULA</h3>
                   <p>B.Arch, GITAM University</p>
                 </div>
                 <div className="right-member">
-                  <h3>AR. RAHUL KUMAR REDDIRAJULA</h3>
+                  <h3>AR. ADARSH PIDUGU</h3>
                   <p>B.Arch, GITAM University</p>
 
                 </div>

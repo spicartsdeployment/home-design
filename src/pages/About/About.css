@@ -126,11 +126,16 @@
 
 }
 
-.left-member,
-.right-member {
+.left-member {
   background: #555353;
   border-radius: 7px;
   padding: 7px 11px;
+}
+
+.right-member {
+  background: #555353;
+  border-radius: 7px;
+  padding: 7px 65px;
 }
 
 /* Desktop layout (≥768px) → members in a row */

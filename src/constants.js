@@ -224,6 +224,40 @@ export const project_info = [
         Open spaces and large green vistas create a harmonious connection between indoor comfort and outdoor living. The design emphasizes simplicity and elegance, with clean lines and contemporary forms. 
         Natural light and flowing spatial layouts enhance the sense of openness and tranquility. It’s a sophisticated escape that celebrates modern living amidst nature’s vast beauty.`
   },
+  {
+    id: 13,
+    title: "Landscape layout, Nagarkurnool",
+    subTittle: "Residential",
+    img: project13Img,
+    images: project13_Images,
+    description: `This modern landscape project transforms public space into a vibrant and welcoming environment. Thoughtfully designed parks, recreational areas, and open spaces encourage community engagement and outdoor activity.
+     The layout balances aesthetics with functionality, creating a harmonious blend of greenery and amenities. Pathways, seating areas, and landscaping elements are curated to enhance user experience and visual appeal.
+      This Park stands as a testament to contemporary landscape design that promotes both leisure and connectivity.
+      `},
+
+
+  {
+    id: 5,
+    title: "White Ridge Hotel, Hi-tech City",
+    subTittle: "Hospitality",
+    img: project5Img, images: project5_Images,
+    description: `A landmark in luxury hospitality, this project embodies refined design and impeccable construction.
+         Every space is crafted to deliver an elevated guest experience, combining sophistication with comfort. Premium materials, elegant detailing, and thoughtful spatial planning define the hotel’s timeless character.
+        The architecture seamlessly integrates functionality with grandeur, creating an inviting yet distinguished ambiance. White Ridge stands as a testament to premium design excellence and world-class craftsmanship.`
+  },
+
+  {
+    id: 14,
+    title: "White ridge farmhouse, Yadagiri",
+    subTittle: "Residential",
+    img: project14Img,
+    images: project14_Images,
+    description: `This elegant residential project offers a serene countryside retreat that blends rustic charm with modern comforts. Thoughtfully designed living spaces, open landscapes, and natural surroundings create an atmosphere of tranquility and privacy.
+     The layout balances aesthetics with functionality, providing a seamless connection between indoor and outdoor areas. Architecture, materials, and sustainable elements are curated to enhance comfort, beauty, and long-term value.
+      This farmhouse stands as a testament to timeless design that promotes relaxation, luxury, and a closer connection to nature.`},
+
+
+
 
   {
     id: 4,
@@ -237,15 +271,7 @@ export const project_info = [
   },
 
 
-  {
-    id: 5,
-    title: "White Ridge Hotel, Hi-tech City",
-    subTittle: "Hospitality",
-    img: project5Img, images: project5_Images,
-    description: `A landmark in luxury hospitality, this project embodies refined design and impeccable construction.
-         Every space is crafted to deliver an elevated guest experience, combining sophistication with comfort. Premium materials, elegant detailing, and thoughtful spatial planning define the hotel’s timeless character.
-        The architecture seamlessly integrates functionality with grandeur, creating an inviting yet distinguished ambiance. White Ridge stands as a testament to premium design excellence and world-class craftsmanship.`
-  },
+
 
 
   {
@@ -325,25 +351,7 @@ export const project_info = [
       Careful planning enhances both functionality and aesthetic appeal for future owners. It’s a well-conceived layout that balances modern living requirements with the tranquility of rural surroundings.
   `},
 
-  {
-    id: 13,
-    title: "Landscape layout, Nagarkurnool",
-    subTittle: "Residential",
-    img: project13Img,
-    images: project13_Images,
-    description: `This modern landscape project transforms public space into a vibrant and welcoming environment. Thoughtfully designed parks, recreational areas, and open spaces encourage community engagement and outdoor activity.
-     The layout balances aesthetics with functionality, creating a harmonious blend of greenery and amenities. Pathways, seating areas, and landscaping elements are curated to enhance user experience and visual appeal.
-      This Park stands as a testament to contemporary landscape design that promotes both leisure and connectivity.`},
 
-  {
-    id: 14,
-    title: "White ridge farmhouse, Yadagiri",
-    subTittle: "Residential",
-    img: project14Img,
-    images: project14_Images,
-    description: `This elegant residential project offers a serene countryside retreat that blends rustic charm with modern comforts. Thoughtfully designed living spaces, open landscapes, and natural surroundings create an atmosphere of tranquility and privacy.
-     The layout balances aesthetics with functionality, providing a seamless connection between indoor and outdoor areas. Architecture, materials, and sustainable elements are curated to enhance comfort, beauty, and long-term value.
-      This farmhouse stands as a testament to timeless design that promotes relaxation, luxury, and a closer connection to nature.`},
 
 
 
@@ -354,15 +362,16 @@ export const teamData = {
   description: {
     title: "About us",
     text: `
-    At Agara Associates, we believe architecture is more than just building spaces — it’s about crafting experiences that inspire, connect, and endure.
-     Guided by creativity and driven by a passion for design, we approach every project as an opportunity to transform ideas into timeless spaces.
+    At Agara Associates, we believe great architecture goes beyond buildings — it creates experiences that inspire, connect, and last.
 
-     Our hexagon logo reflects the six pillars that guide this journey: Design, Innovation, Sustainability, Quality, Functionality, and Client Focus.
-     Together, these six sides form a complete and balanced approach to shaping environments that tell stories, evoke emotion, and stand as landmarks of thoughtful design.
-     With a seamless blend of architecture, interiors, landscape, and construction, we deliver holistic solutions that balance aesthetics with performance.
+    Our philosophy is built on six guiding pillars: Design, Innovation, Sustainability, Quality, Functionality, and Client Focus.
+     Like the six sides of our hexagon logo, these pillars form a complete approach that balances aesthetics with performance.
 
-   From concept to completion, our team thrives on innovation and collaboration, ensuring every project reflects our client’s vision while embracing sustainability, context,
-    and character.`,
+    From homes to large-scale developments, we blend architecture, interiors, landscapes, and construction into seamless solutions.
+     Every project is shaped with care to tell a story, evoke emotion, and stand as a landmark of thoughtful design.
+
+     Most importantly, we design with you in mind. From concept to completion, our team thrives on collaboration, ensuring your vision becomes a reality — sustainable, contextual, and full of character.
+  `,
   },
   teamImage: teamImg, // ✅ big group photo
   members: [

@@ -83,7 +83,7 @@
     .project-info-container img {
         height: 230px;
         width: 95%;
-        padding: 8px;
+        /* padding: 8px; */
         border-radius: 10px;
     }
 
@@ -107,6 +107,10 @@
 
     .project-info-container p {
         padding: 8px;
+    }
+
+    .project-info-container {
+        padding: 12px;
     }
 
 

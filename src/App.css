@@ -141,4 +141,8 @@
     bottom: 6rem;
     /* enough space above navbar */
   }
+
+  .main-icons {
+    width: 100px;
+  }
 }

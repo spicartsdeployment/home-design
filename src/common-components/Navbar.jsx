@@ -19,10 +19,10 @@ function Navbar({ active, isMobile, scrollToSection }) {
 
     const sections = [
         // { id: "home", label: "HOME", icon: <FaHome />, type: "scroll" },
-        { id: "services", label: "Services", icon: <img src={nav_icons.services_icon} alt="" style={{ height: "25px" }} />, type: "scroll" },
-        { id: "projects", label: "Projects", icon: <img src={nav_icons.projects_icon} alt="" style={{ height: "25px" }} />, type: "page" },
-        { id: "about", label: "About us", icon: <img src={nav_icons.aboutus_icon} alt="" style={{ height: "25px" }} />, type: "scroll" },
-        { id: "contact", label: "Contact", icon: <img src={nav_icons.contact_icon} alt="" style={{ height: "25px" }} />, type: "scroll" },];
+        { id: "services", label: "Services", icon: <img src={nav_icons.services_icon} alt="" style={{ height: "25px", width: "25px" }} className="main-icons" />, type: "scroll" },
+        { id: "projects", label: "Projects", icon: <img src={nav_icons.projects_icon} alt="" style={{ height: "25px", width: "25px" }} className="main-icons" />, type: "page" },
+        { id: "about", label: "About us", icon: <img src={nav_icons.aboutus_icon} alt="" style={{ height: "25px", width: "25px" }} className="main-icons" />, type: "scroll" },
+        { id: "contact", label: "Contact", icon: <img src={nav_icons.contact_icon} alt="" style={{ height: "25px", width: "25px" }} className="main-icons" />, type: "scroll" },];
 
     const handleScrollNav = (sectionId) => {
         if (location.pathname === '/' && scrollToSection) {
